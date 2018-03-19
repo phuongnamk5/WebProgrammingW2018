@@ -1,0 +1,1835 @@
+﻿<html>
+<head>
+<style>
+    .contai{
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin: 0 auto;
+    }
+	.body{
+    color: #000;
+    font: 400 12px arial;
+    text-align: left;
+    min-height: 100vh;
+    overflow-x: hidden;
+	padding:0;
+	}
+	.thanhtab{
+	background-color: #eee;
+    height: 30px;
+    border-bottom: 1px solid #ccc;
+    color: #333;
+    font-size: 11px;
+    position: relative;
+	}
+	.intab{
+    height: 100%;
+    margin: 0 auto;
+    max-width: 1000px;
+	}
+	.tableft{
+	height:29px;
+	list-style-type:none;
+	font-size:11px;
+	float:left;
+    margin:auto;
+    padding:0;
+	}
+	.litab{
+	height: 100%;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 29px;
+    padding: 0 5px;
+    border-left: 1px solid #ccc;
+	}
+	.litab1{
+	height: 100%;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 29px;
+    padding: 0 5px;
+	}
+	.icon{
+	width: 15px;
+    height: 15px;
+    background: url(https://s.vnecdn.net/vnexpress/restruct/c/v8/v2/pc/images/graphics/icon_vne.png) no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -2px;
+	}
+	.phone{
+	width: 13px;
+    height: 13px;
+    background-position: -332px -21px;
+	float: left;
+    margin: 6px 3px 0 0;
+	}
+	.sdt{
+	font-size:10px;
+	color: #333;
+	}
+	.lhqc{
+	text-decoration:none;
+	color:black;
+	}
+	.tabright{
+	height:29px;
+	list-style-type:none;
+	float:right;
+	font-size:12px;
+    padding-left:0;
+    padding-right:0;
+    margin:auto;
+	}
+	.search{
+	border-left: none;
+    padding-left: 0;
+	}
+	search2{
+	float: left!important;
+	}
+	.timkiem{
+	width: 150px!important;
+    float: left;
+    height: 23px!important;
+    margin-right: -1px;
+	margin-top:3px;
+	}
+	.submit{
+	background: #fff;
+    float: left;
+    height: 23px;
+    width: 23px;
+    border: 1px solid silver;
+    cursor: pointer;
+    font-size: 0;
+    line-height: 0;
+    margin-top: 3px;
+    margin-right:5px;
+	}
+	.search{
+	font-size: 12px;
+	background-position: -490px -20px;
+    float:left;
+	}
+    .a{
+        text-decoration:none;
+        color:black;
+    }
+    .dangnhap{
+        position:relative;
+    }
+    .dangky{
+        position:relative;
+        cursor:pointer;
+    }
+    .logo{
+        padding-bottom:10px;
+        max-width:1000px;
+    }
+    
+    .quangcao{
+    padding-top: 10px;
+    width: 100%;
+    text-align: right;
+    }
+    .1{
+        width: 25%;
+        height: 50px;
+        cursor: pointer;
+        position: absolute
+    }
+    #mainmenu{
+        width: 1000px;
+        height: 20px;
+        border-bottom: 3px solid silver;
+        padding-bottom: 3px;
+        position: relative;
+        margin: 0 auto;
+    }
+    .home{
+    margin: 3px auto;
+    width: 1000px;
+    position: relative;
+    }
+    .menu{
+        font-weight: 700;
+    font-size: 12px;
+    border-right: 1px solid #e2e2e3;
+    padding-right: 4px;
+    height: 14px;
+    margin-right: 3px;
+    float: left;
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    }
+    .trangnhat{
+    color:#9f224e;
+    }
+    .right{
+    float: right!important;
+    }
+    .English{
+    color: #666;
+    background-color:#e2e2e2;
+    }
+    .time{
+        float: left;
+    font: 400 11px/20px arial;
+    text-align: right;
+    width: 180px;
+    white-space: nowrap;
+    margin-left: 25px;
+    }
+    .feature{
+            border-bottom: 1px solid #e2e2e3;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+    }
+    .pic_5x3{
+            padding-bottom: 60%;
+    }
+    article{
+    width: 510px;
+    border-right: 1px solid #e2e2e3;
+    padding-right: 9px;
+    }
+    .title_news{
+          font: 700 14px arial;
+    color: #333;
+    position: relative;
+    z-index: 3;
+    }
+    .a1{
+            color: #9f224e;
+    font: 700 20px arial;
+    } 
+    .icon_video{
+        background-position: -15px -1px;
+    height: 15px;
+    margin-top: 0;
+    vertical-align: bottom;
+    }
+    .description{
+        color: #333;
+    font: 400 13px/16px arial;
+    margin-bottom: 5px;
+    }
+    .icon_home{
+        width: 13px;
+    height: 13px;
+    background-position: -2px -21px;
+	float: left;
+    color:#9f224e;
+    }
+    .sub_feature{
+    width: 180px;
+    height:410px;
+    padding: 0 0 0 10px;
+    border-right: 1px solid #ccc;
+    vertical-align: top;
+    overflow: auto;
+    max-width:1000px;
+    }
+    div{
+        display:block;
+    }
+    ul,li{
+        list-style-type:none;
+    }
+    .li_min{
+            width: 155px!important;
+    border-bottom: 1px dotted #e2e2e3;
+    margin-bottom: 7px;
+    padding-bottom: 7px;
+    float: left;
+    }
+    .quangcao_feature{
+            vertical-align: top;
+    width: 310px;
+    padding-left: 10px;
+    }
+    .quangcao_1{
+        float:right;
+        width:37%;
+    }
+    img{
+        border: 0;
+    font-size: 0;
+    line-height: 0;
+    max-width: 100%;
+    }
+    .vnexpress{
+        float:left;
+
+    }
+     .quangcao2{
+        float:right;
+        width:100%;
+        padding-bottom:20px;
+    }
+     .main1{
+             width: 390px;
+    border-right: 1px solid #ccc;
+    padding-right: 9px;
+     }
+     .list_news{
+    border-bottom: 1px dotted #e2e2e3;
+    border-right:none;
+    margin-bottom: 6px;
+    padding-bottom: 10px;
+    float: left;
+    width: 100%;
+     }
+     .mini_pic{
+             position: relative;
+    margin-right: 10px;
+    float: left;
+    width: 140px;
+    margin-bottom: 10px;
+     }
+     .bonus_descrip2{
+        color: #666;
+    font: 700 11px/14px arial;
+    position: relative;
+     }
+     .bonus_descrip{
+         position: relative;
+    margin-bottom: 7px;
+     }
+     .left{
+             float: left!important;
+     }
+     .menu_mini{
+             width: 100%;
+    float: left;
+        background-color:#e4e4e4;
+     }
+     .toppic{
+         color: #9f224e;
+    font: 700 14px/20px arial;
+    padding: 6px 0;
+    display: block;
+     }
+     .toppic1{
+         float:left;
+         padding-left:10px;
+     }
+     .toppic3{
+    font: 400 11px arial;
+    color: #666;
+    padding: 10px 6px;
+    display: block;
+     }
+    .list_news2 {
+        border-right: none;
+        margin-bottom: 6px;
+        padding-bottom: 10px;
+        float: left;
+        width: 100%;
+    }
+    .bonus_descrip3{
+        color: #666;
+    font: 700 11px/14px arial;
+    position: relative;
+    border-top: 1px dotted #e2e2e3;
+     }
+    .list_title {
+        border-top: 1px dotted #ccc;
+        margin-top: 10px;
+        padding-top: 8px;
+        padding-left: 4px;
+        float: left;
+        width: 100%;
+    }
+    .main2{
+            width: 440px;
+    padding: 0 10px 0 10px;
+    }
+    .list_news3{
+        border-right: none;
+        border-bottom: none;
+        margin-bottom: 6px;
+        padding-bottom: 10px;
+        float: left;
+        width: 300px;
+    }
+    .list_title2{
+        width: 115px;
+        margin-top: 10px;
+        padding-top: 20px;
+        padding-left: 4px;
+        float: left;
+    }
+    .bonus_descrip4 {
+        color: #666;
+        font: 700 11px/14px arial;
+        position: relative;
+    }
+    .main3{
+            width: 170px;
+    padding-left: 9px;
+    border-left: 1px solid #e2e2e3;
+    }
+    .icon_thoitiet{
+            background-position: -36px -108px;
+    width: 40px;
+    height: 17px;
+    }
+    .thongtin{
+            width: 1000px;
+    margin: 10px auto;
+    }
+    .newthongtin{
+            background: #f4f4f4;
+    border-top: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+    color: #9f224e;
+    padding: 0 1%;
+    font: 700 14px/30px arial;
+    position: relative;
+    flaot:left;
+    }
+    .icon_back{
+            background-position: -476px -109px;
+    width: 12px;
+    float:right;
+    }
+    .icon_next{
+                background-position: -492px -109px;
+    width: 12px;
+    float:right;
+    }
+    .in_newthongtin{
+            padding: 7px 1%;
+    background: #f4f4f4;
+    border-top: 1px solid #fff;
+    height:120px;
+    }
+    .img_newthongtin{
+        width:25%; 
+        float:left;
+    }
+    .danhsach{
+        width:13%; 
+        float:left;
+        padding-left:5px;
+    }
+    h6{
+            font: bold 12px/20px arial;
+    height: 20px;
+    margin: 0 0 10px;
+    }
+    .in_newthongtin2{
+            padding: 7px 1%;
+    background: #f4f4f4;
+    border-top: 1px solid #fff;
+    height:175px;
+    }
+</style>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body class="body">
+	<div class="thanhtab">
+		<div class="intab">
+			<ul class="tableft">
+				<li class="litab1">
+					<i class="icon phone"></i>
+					<strong class="sdt">0123.888.0123 </strong> (HN)
+					<strong class="sdt">0129.233.3555 </strong> (TP HCM)
+				</li>
+				<li class="litab">
+					<a href="https://vnexpress.net/lien-he-quang-cao" class="lhqc">Liên hệ quảng cáo</a>
+				</li>
+				<li class="litab">
+					<button type="button" class="btn btn-primary btn-xs">Like</button>
+					<button type="button" class="btn btn-primary btn-xs">Follow</button>
+				</li>
+			</ul>
+			<ul class="tabright">
+				<li class="search">
+					<div class="search2">
+						<div>
+							<input type="text" class="timkiem" placeholder="Tìm kiếm">
+							<button type="submit" class="submit">
+								<i class="icon search"></i>
+							</button>
+						</div>
+					</div>
+				</li>
+                <li class="litab a dangnhap">
+                    <a href="#" class="a"> Đăng nhập</a>
+                </li>
+                <li class="litab a dangky">
+                    <a href="#" class="a"> Đăng ký</a>
+                </li>
+			</ul>
+		</div>
+	</div>
+    <header>
+        <div class="logo contai">
+
+            <div class="quangcao">
+                <a href="#" class="a vnexpress"><img src="https://s.vnecdn.net/vnexpress/restruct/i/v53/graphics/img_logo_vne_web.gif"</a>
+                <a href="#" ><img class="quangcao_1"src="http://bookingquangcao.com.vn/upload/images/logo(1).png" /></a>
+                <a href="#"><img class="quangcao_1" src="http://bookingquangcao.com.vn/upload/images/logo(1).png" /></a>
+            </div>
+        </div>
+    </header>
+    <nav id="mainmenu">
+        <a href="#" class="a menu"><i class="icon icon_home"></i></a>
+        <a href="#" class="a menu">Video</a>
+        <a href="#" class="a menu">Thời sự</a>
+        <a href="#" class="a menu">Góc nhìn</a>
+        <a href="#" class="a menu">Thế giới</a>
+        <a href="#" class="a menu">Kinh doanh</a>
+        <a href="#" class="a menu">Giải trí</a>
+        <a href="#" class="a menu">Thể thao</a>
+        <a href="#" class="a menu">Pháp luật</a>
+        <a href="#" class="a menu">Giáo dục</a>
+        <a href="#" class="a menu">Sức khỏe</a>
+        <a href="#" class="a menu">Gia đình</a>
+        <a href="#" class="a menu">Du lịch</a>
+        <a href="#" class="a menu">Khoa học</a>
+        <a href="#" class="a menu">Số hóa</a>
+        <a href="#" class="a menu">Xe</a>
+        <a href="#" class="a menu">Cộng đồng</a>
+        <a href="#" class="a menu">Tâm sự</a>
+        <a href="#" class="a menu">Cười</a>
+    </nav>
+    <section class="home">
+        <div>
+                <button><a href="#" class="a menu trangnhat">Trang nhất</a></button>
+            <div class="right">
+                <a href="https://e.vnexpress.net" class="a menu English">English</a>
+                <span class="time">Thứ sáu, 2/3/2018 | 09:13 GMT+7</span>
+                <a href="#" class="a menu English">24h qua</a>
+                <a href="#" class="a menu English">RSS</a>
+            </div>
+        </div>
+    </section>
+    <section class="feature contai">
+        <article>
+            <div>
+                <a class="pic_5x3" href="https://video.vnexpress.net/tin-tuc/xa-hoi/1-000-nguoi-dieu-hanh-3km-trong-tet-nguyen-tieu-o-sai-gon-3717743.html"><img src="https://i-vnexpress.vnecdn.net/2018/03/02/Sequence0200251808Still001-152-9694-2775-1520000679_500x300.png"</a>                
+                <h1 class="title_news"><a class="a1" href="https://video.vnexpress.net/tin-tuc/xa-hoi/1-000-nguoi-dieu-hanh-3km-trong-tet-nguyen-tieu-o-sai-gon-3717743.html">1.000 người diễu hành 3km trong Tết Nguyên tiêu ở Sài Gòn <i class="icon icon_video"></i></a></h1>
+                   <h2 class="description">
+                       Cả nghìn người hóa trang thành tiên nữ, thần Tài, binh lính… cùng diễu hành trong lễ hội đường phố lớn nhất năm của cộng đồng người Hoa tại TP HCM. 
+                   </h2>
+            </div>                        
+        </article> 
+        <div class="sub_feature">
+           <ul style="height: auto;margin-bottom: 0px;margin-right: 0px;max-height: 279px;padding:0px;">
+               <li class="li_min">
+                   <a href="https://suckhoe.vnexpress.net/tin-tuc/dinh-duong/lo-lang-vi-con-trai-nhe-can-3717765.html" class="a">Lo lắng vì con trai nhẹ cân </a>
+               </li>
+               <li class="li_min">
+                   <a href="https://thethao.vnexpress.net/tin-tuc/golf/jordan-spieth-but-pha-manh-me-tai-vong-hai-mexico-championship-3717846.html" class="a">Jordan Spieth bứt phá mạnh mẽ tại vòng hai Mexico Championship <i class="icon icon_video"></i> </a>
+               </li>
+               <li class="li_min">
+                   <a href="https://vnexpress.net/tin-tuc/the-gioi/cuoc-song-do-day/be-gai-trung-quoc-vieng-mo-an-nhan-cuu-mang-trong-dam-chay-3717798.html" class="a"> Bé gái Trung Quốc viếng mộ ân nhân cứu mạng trong đám cháy <i class="icon icon_video"></i> </a>
+               </li>
+               <li class="li_min">
+                   <a href="https://vnexpress.net/tin-tuc/the-gioi/cuoc-song-do-day/be-gai-trung-quoc-vieng-mo-an-nhan-cuu-mang-trong-dam-chay-3717798.html" class="a"> Bé gái Trung Quốc viếng mộ ân nhân cứu mạng trong đám cháy <i class="icon icon_video"></i> </a>
+               </li>
+               <li class="li_min">
+                   <a href="https://vnexpress.net/tin-tuc/the-gioi/cuoc-song-do-day/be-gai-trung-quoc-vieng-mo-an-nhan-cuu-mang-trong-dam-chay-3717798.html" class="a"> Bé gái Trung Quốc viếng mộ ân nhân cứu mạng trong đám cháy <i class="icon icon_video"></i> </a>
+               </li>
+               <li class="li_min">
+                   <a href="https://vnexpress.net/tin-tuc/the-gioi/cuoc-song-do-day/be-gai-trung-quoc-vieng-mo-an-nhan-cuu-mang-trong-dam-chay-3717798.html" class="a"> Bé gái Trung Quốc viếng mộ ân nhân cứu mạng trong đám cháy <i class="icon icon_video"></i> </a>
+               </li>
+               <li class="li_min">
+                   <a href="https://vnexpress.net/tin-tuc/the-gioi/cuoc-song-do-day/be-gai-trung-quoc-vieng-mo-an-nhan-cuu-mang-trong-dam-chay-3717798.html" class="a"> Bé gái Trung Quốc viếng mộ ân nhân cứu mạng trong đám cháy <i class="icon icon_video"></i> </a>
+               </li>
+               <li class="li_min">
+                   <a href="https://vnexpress.net/tin-tuc/the-gioi/cuoc-song-do-day/be-gai-trung-quoc-vieng-mo-an-nhan-cuu-mang-trong-dam-chay-3717798.html" class="a"> Bé gái Trung Quốc viếng mộ ân nhân cứu mạng trong đám cháy <i class="icon icon_video"></i> </a>
+               </li>
+               <li class="li_min">
+                   <a href="https://vnexpress.net/tin-tuc/the-gioi/cuoc-song-do-day/be-gai-trung-quoc-vieng-mo-an-nhan-cuu-mang-trong-dam-chay-3717798.html" class="a"> Bé gái Trung Quốc viếng mộ ân nhân cứu mạng trong đám cháy <i class="icon icon_video"></i> </a>
+               </li>
+               <li class="li_min">
+                   <a href="https://vnexpress.net/tin-tuc/the-gioi/cuoc-song-do-day/be-gai-trung-quoc-vieng-mo-an-nhan-cuu-mang-trong-dam-chay-3717798.html" class="a"> Bé gái Trung Quốc viếng mộ ân nhân cứu mạng trong đám cháy <i class="icon icon_video"></i> </a>
+               </li>
+               <li class="li_min">
+                   <a href="https://vnexpress.net/tin-tuc/the-gioi/cuoc-song-do-day/be-gai-trung-quoc-vieng-mo-an-nhan-cuu-mang-trong-dam-chay-3717798.html" class="a"> Bé gái Trung Quốc viếng mộ ân nhân cứu mạng trong đám cháy <i class="icon icon_video"></i> </a>
+               </li>
+               <li class="li_min">
+                   <a href="https://vnexpress.net/tin-tuc/the-gioi/cuoc-song-do-day/be-gai-trung-quoc-vieng-mo-an-nhan-cuu-mang-trong-dam-chay-3717798.html" class="a"> Bé gái Trung Quốc viếng mộ ân nhân cứu mạng trong đám cháy <i class="icon icon_video"></i> </a>
+               </li>
+           </ul>
+        </div> 
+        <div class="quangcao_feature">
+            <a href="#"><img class="quangcao2" src="https://img.polyad.net/2018/02/28/300x120-02.gif" /></a>
+            <a href="#"><img class="quangcao2" src="https://img.polyad.net/2018/02/26/mainbanner_300x120.jpg" /></a>
+            <a href="#"><img class="quangcao2" src="https://img.polyad.net/2018/02/28/300x120-02.gif" /></a>
+        </div> 
+    </section>
+    <section class="contai">
+        <section class="main1">
+            <article class="list_news">
+                <h3 class="title_news"><a class="title_news a"href="https://video.vnexpress.net/tin-tuc/xa-hoi/1-000-nguoi-dieu-hanh-3km-trong-tet-nguyen-tieu-o-sai-gon-3717743.html">Hai Bộ trưởng tham gia thí điểm 'chất vấn và trả lời chất vấn ngay' </a></h3>
+                <div class=" mini_pic">
+                    <a href="https://vnexpress.net/tin-tuc/thoi-su/hai-bo-truong-tham-gia-thi-diem-chat-van-va-tra-loi-chat-van-ngay-3716232.html" class="pic_5x3">
+                        <img src="https://i-vnexpress.vnecdn.net/2018/03/03/163914botruongtraloichatvan1151997847062938667457-1520043093_140x84.jpg" />
+                    </a>
+                </div>
+                <h4 class="description">
+                    Đại biểu nêu vấn đề trong một phút, người bị chất vấn trả lời ngay câu hỏi trong khoảng 3 phút. 
+                </h4>
+                <p class="bonus_descrip">
+                    <a href="https://vnexpress.net/tin-tuc/thoi-su/dai-bieu-co-the-tranh-luan-lien-tuc-khi-chat-van-bo-truong-3598681.html"class="bonus_descrip2">
+                        Đại biểu có thể tranh luận liên tục khi chất vấn bộ trưởng
+                    </a>
+                </p>
+            </article> 
+
+            <article class="list_news">
+                <h3 class="title_news"><a class="title_news a" href="https://video.vnexpress.net/tin-tuc/xa-hoi/1-000-nguoi-dieu-hanh-3km-trong-tet-nguyen-tieu-o-sai-gon-3717743.html">Hai Bộ trưởng tham gia thí điểm 'chất vấn và trả lời chất vấn ngay' </a></h3>
+                <div class=" mini_pic">
+                    <a href="https://vnexpress.net/tin-tuc/thoi-su/hai-bo-truong-tham-gia-thi-diem-chat-van-va-tra-loi-chat-van-ngay-3716232.html" class="pic_5x3">
+                        <img src="https://i-vnexpress.vnecdn.net/2018/03/03/163914botruongtraloichatvan1151997847062938667457-1520043093_140x84.jpg" />
+                    </a>
+                </div>
+                <h4 class="description">
+                    Đại biểu nêu vấn đề trong một phút, người bị chất vấn trả lời ngay câu hỏi trong khoảng 3 phút.
+                </h4>
+                <p class="bonus_descrip">
+                    <a href="https://vnexpress.net/tin-tuc/thoi-su/dai-bieu-co-the-tranh-luan-lien-tuc-khi-chat-van-bo-truong-3598681.html" class="bonus_descrip2">
+                        Đại biểu có thể tranh luận liên tục khi chất vấn bộ trưởng
+                    </a>
+                </p>
+            </article>
+
+            <article class="list_news">
+                <h3 class="title_news"><a class="title_news a" href="https://video.vnexpress.net/tin-tuc/xa-hoi/1-000-nguoi-dieu-hanh-3km-trong-tet-nguyen-tieu-o-sai-gon-3717743.html">Hai Bộ trưởng tham gia thí điểm 'chất vấn và trả lời chất vấn ngay' </a></h3>
+                <div class=" mini_pic">
+                    <a href="https://vnexpress.net/tin-tuc/thoi-su/hai-bo-truong-tham-gia-thi-diem-chat-van-va-tra-loi-chat-van-ngay-3716232.html" class="pic_5x3">
+                        <img src="https://i-vnexpress.vnecdn.net/2018/03/03/163914botruongtraloichatvan1151997847062938667457-1520043093_140x84.jpg" />
+                    </a>
+                </div>
+                <h4 class="description">
+                    Đại biểu nêu vấn đề trong một phút, người bị chất vấn trả lời ngay câu hỏi trong khoảng 3 phút.
+                </h4>
+                <p class="bonus_descrip">
+                    <a href="https://vnexpress.net/tin-tuc/thoi-su/dai-bieu-co-the-tranh-luan-lien-tuc-khi-chat-van-bo-truong-3598681.html" class="bonus_descrip2">
+                        Đại biểu có thể tranh luận liên tục khi chất vấn bộ trưởng
+                    </a>
+                </p>
+            </article>
+
+            <article class="list_news">
+                <h3 class="title_news"><a class="title_news a" href="https://video.vnexpress.net/tin-tuc/xa-hoi/1-000-nguoi-dieu-hanh-3km-trong-tet-nguyen-tieu-o-sai-gon-3717743.html">Hai Bộ trưởng tham gia thí điểm 'chất vấn và trả lời chất vấn ngay' </a></h3>
+                <div class=" mini_pic">
+                    <a href="https://vnexpress.net/tin-tuc/thoi-su/hai-bo-truong-tham-gia-thi-diem-chat-van-va-tra-loi-chat-van-ngay-3716232.html" class="pic_5x3">
+                        <img src="https://i-vnexpress.vnecdn.net/2018/03/03/163914botruongtraloichatvan1151997847062938667457-1520043093_140x84.jpg" />
+                    </a>
+                </div>
+                <h4 class="description">
+                    Đại biểu nêu vấn đề trong một phút, người bị chất vấn trả lời ngay câu hỏi trong khoảng 3 phút.
+                </h4>
+                <p class="bonus_descrip">
+                    <a href="https://vnexpress.net/tin-tuc/thoi-su/dai-bieu-co-the-tranh-luan-lien-tuc-khi-chat-van-bo-truong-3598681.html" class="bonus_descrip2">
+                        Đại biểu có thể tranh luận liên tục khi chất vấn bộ trưởng
+                    </a>
+                </p>
+            </article>
+
+            <article class="list_news">
+                <h3 class="title_news"><a class="title_news a" href="https://video.vnexpress.net/tin-tuc/xa-hoi/1-000-nguoi-dieu-hanh-3km-trong-tet-nguyen-tieu-o-sai-gon-3717743.html">Hai Bộ trưởng tham gia thí điểm 'chất vấn và trả lời chất vấn ngay' </a></h3>
+                <div class=" mini_pic">
+                    <a href="https://vnexpress.net/tin-tuc/thoi-su/hai-bo-truong-tham-gia-thi-diem-chat-van-va-tra-loi-chat-van-ngay-3716232.html" class="pic_5x3">
+                        <img src="https://i-vnexpress.vnecdn.net/2018/03/03/163914botruongtraloichatvan1151997847062938667457-1520043093_140x84.jpg" />
+                    </a>
+                </div>
+                <h4 class="description">
+                    Đại biểu nêu vấn đề trong một phút, người bị chất vấn trả lời ngay câu hỏi trong khoảng 3 phút.
+                </h4>
+                <p class="bonus_descrip">
+                    <a href="https://vnexpress.net/tin-tuc/thoi-su/dai-bieu-co-the-tranh-luan-lien-tuc-khi-chat-van-bo-truong-3598681.html" class="bonus_descrip2">
+                        Đại biểu có thể tranh luận liên tục khi chất vấn bộ trưởng
+                    </a>
+                </p>
+            </article>
+
+            <article class="list_news">
+                <h3 class="title_news"><a class="title_news a" href="https://video.vnexpress.net/tin-tuc/xa-hoi/1-000-nguoi-dieu-hanh-3km-trong-tet-nguyen-tieu-o-sai-gon-3717743.html">Hai Bộ trưởng tham gia thí điểm 'chất vấn và trả lời chất vấn ngay' </a></h3>
+                <div class=" mini_pic">
+                    <a href="https://vnexpress.net/tin-tuc/thoi-su/hai-bo-truong-tham-gia-thi-diem-chat-van-va-tra-loi-chat-van-ngay-3716232.html" class="pic_5x3">
+                        <img src="https://i-vnexpress.vnecdn.net/2018/03/03/163914botruongtraloichatvan1151997847062938667457-1520043093_140x84.jpg" />
+                    </a>
+                </div>
+                <h4 class="description">
+                    Đại biểu nêu vấn đề trong một phút, người bị chất vấn trả lời ngay câu hỏi trong khoảng 3 phút.
+                </h4>
+                <p class="bonus_descrip">
+                    <a href="https://vnexpress.net/tin-tuc/thoi-su/dai-bieu-co-the-tranh-luan-lien-tuc-khi-chat-van-bo-truong-3598681.html" class="bonus_descrip2">
+                        Đại biểu có thể tranh luận liên tục khi chất vấn bộ trưởng
+                    </a>
+                </p>
+            </article>
+
+            <article class="list_news">
+                <h3 class="title_news"><a class="title_news a" href="https://video.vnexpress.net/tin-tuc/xa-hoi/1-000-nguoi-dieu-hanh-3km-trong-tet-nguyen-tieu-o-sai-gon-3717743.html">Hai Bộ trưởng tham gia thí điểm 'chất vấn và trả lời chất vấn ngay' </a></h3>
+                <div class=" mini_pic">
+                    <a href="https://vnexpress.net/tin-tuc/thoi-su/hai-bo-truong-tham-gia-thi-diem-chat-van-va-tra-loi-chat-van-ngay-3716232.html" class="pic_5x3">
+                        <img src="https://i-vnexpress.vnecdn.net/2018/03/03/163914botruongtraloichatvan1151997847062938667457-1520043093_140x84.jpg" />
+                    </a>
+                </div>
+                <h4 class="description">
+                    Đại biểu nêu vấn đề trong một phút, người bị chất vấn trả lời ngay câu hỏi trong khoảng 3 phút.
+                </h4>
+                <p class="bonus_descrip">
+                    <a href="https://vnexpress.net/tin-tuc/thoi-su/dai-bieu-co-the-tranh-luan-lien-tuc-khi-chat-van-bo-truong-3598681.html" class="bonus_descrip2">
+                        Đại biểu có thể tranh luận liên tục khi chất vấn bộ trưởng
+                    </a>
+                </p>
+            </article>
+
+            <article class="list_news">
+                <h3 class="title_news"><a class="title_news a" href="https://video.vnexpress.net/tin-tuc/xa-hoi/1-000-nguoi-dieu-hanh-3km-trong-tet-nguyen-tieu-o-sai-gon-3717743.html">Hai Bộ trưởng tham gia thí điểm 'chất vấn và trả lời chất vấn ngay' </a></h3>
+                <div class=" mini_pic">
+                    <a href="https://vnexpress.net/tin-tuc/thoi-su/hai-bo-truong-tham-gia-thi-diem-chat-van-va-tra-loi-chat-van-ngay-3716232.html" class="pic_5x3">
+                        <img src="https://i-vnexpress.vnecdn.net/2018/03/03/163914botruongtraloichatvan1151997847062938667457-1520043093_140x84.jpg" />
+                    </a>
+                </div>
+                <h4 class="description">
+                    Đại biểu nêu vấn đề trong một phút, người bị chất vấn trả lời ngay câu hỏi trong khoảng 3 phút.
+                </h4>
+                <p class="bonus_descrip">
+                    <a href="https://vnexpress.net/tin-tuc/thoi-su/dai-bieu-co-the-tranh-luan-lien-tuc-khi-chat-van-bo-truong-3598681.html" class="bonus_descrip2">
+                        Đại biểu có thể tranh luận liên tục khi chất vấn bộ trưởng
+                    </a>
+                </p>
+            </article>
+
+            <article class="list_news">
+                <h3 class="title_news"><a class="title_news a" href="https://video.vnexpress.net/tin-tuc/xa-hoi/1-000-nguoi-dieu-hanh-3km-trong-tet-nguyen-tieu-o-sai-gon-3717743.html">Hai Bộ trưởng tham gia thí điểm 'chất vấn và trả lời chất vấn ngay' </a></h3>
+                <div class=" mini_pic">
+                    <a href="https://vnexpress.net/tin-tuc/thoi-su/hai-bo-truong-tham-gia-thi-diem-chat-van-va-tra-loi-chat-van-ngay-3716232.html" class="pic_5x3">
+                        <img src="https://i-vnexpress.vnecdn.net/2018/03/03/163914botruongtraloichatvan1151997847062938667457-1520043093_140x84.jpg" />
+                    </a>
+                </div>
+                <h4 class="description">
+                    Đại biểu nêu vấn đề trong một phút, người bị chất vấn trả lời ngay câu hỏi trong khoảng 3 phút.
+                </h4>
+                <p class="bonus_descrip">
+                    <a href="https://vnexpress.net/tin-tuc/thoi-su/dai-bieu-co-the-tranh-luan-lien-tuc-khi-chat-van-bo-truong-3598681.html" class="bonus_descrip2">
+                        Đại biểu có thể tranh luận liên tục khi chất vấn bộ trưởng
+                    </a>
+                </p>
+            </article>
+
+            <article class="list_news">
+                <h3 class="title_news"><a class="title_news a" href="https://video.vnexpress.net/tin-tuc/xa-hoi/1-000-nguoi-dieu-hanh-3km-trong-tet-nguyen-tieu-o-sai-gon-3717743.html">Hai Bộ trưởng tham gia thí điểm 'chất vấn và trả lời chất vấn ngay' </a></h3>
+                <div class=" mini_pic">
+                    <a href="https://vnexpress.net/tin-tuc/thoi-su/hai-bo-truong-tham-gia-thi-diem-chat-van-va-tra-loi-chat-van-ngay-3716232.html" class="pic_5x3">
+                        <img src="https://i-vnexpress.vnecdn.net/2018/03/03/163914botruongtraloichatvan1151997847062938667457-1520043093_140x84.jpg" />
+                    </a>
+                </div>
+                <h4 class="description">
+                    Đại biểu nêu vấn đề trong một phút, người bị chất vấn trả lời ngay câu hỏi trong khoảng 3 phút.
+                </h4>
+                <p class="bonus_descrip">
+                    <a href="https://vnexpress.net/tin-tuc/thoi-su/dai-bieu-co-the-tranh-luan-lien-tuc-khi-chat-van-bo-truong-3598681.html" class="bonus_descrip2">
+                        Đại biểu có thể tranh luận liên tục khi chất vấn bộ trưởng
+                    </a>
+                </p>
+            </article>
+
+            <article class="list_news">
+                <h3 class="title_news"><a class="title_news a" href="https://video.vnexpress.net/tin-tuc/xa-hoi/1-000-nguoi-dieu-hanh-3km-trong-tet-nguyen-tieu-o-sai-gon-3717743.html">Hai Bộ trưởng tham gia thí điểm 'chất vấn và trả lời chất vấn ngay' </a></h3>
+                <div class=" mini_pic">
+                    <a href="https://vnexpress.net/tin-tuc/thoi-su/hai-bo-truong-tham-gia-thi-diem-chat-van-va-tra-loi-chat-van-ngay-3716232.html" class="pic_5x3">
+                        <img src="https://i-vnexpress.vnecdn.net/2018/03/03/163914botruongtraloichatvan1151997847062938667457-1520043093_140x84.jpg" />
+                    </a>
+                </div>
+                <h4 class="description">
+                    Đại biểu nêu vấn đề trong một phút, người bị chất vấn trả lời ngay câu hỏi trong khoảng 3 phút.
+                </h4>
+                <p class="bonus_descrip">
+                    <a href="https://vnexpress.net/tin-tuc/thoi-su/dai-bieu-co-the-tranh-luan-lien-tuc-khi-chat-van-bo-truong-3598681.html" class="bonus_descrip2">
+                        Đại biểu có thể tranh luận liên tục khi chất vấn bộ trưởng
+                    </a>
+                </p>
+            </article>
+
+            <article class="list_news">
+                <h3 class="title_news"><a class="title_news a" href="https://video.vnexpress.net/tin-tuc/xa-hoi/1-000-nguoi-dieu-hanh-3km-trong-tet-nguyen-tieu-o-sai-gon-3717743.html">Hai Bộ trưởng tham gia thí điểm 'chất vấn và trả lời chất vấn ngay' </a></h3>
+                <div class=" mini_pic">
+                    <a href="https://vnexpress.net/tin-tuc/thoi-su/hai-bo-truong-tham-gia-thi-diem-chat-van-va-tra-loi-chat-van-ngay-3716232.html" class="pic_5x3">
+                        <img src="https://i-vnexpress.vnecdn.net/2018/03/03/163914botruongtraloichatvan1151997847062938667457-1520043093_140x84.jpg" />
+                    </a>
+                </div>
+                <h4 class="description">
+                    Đại biểu nêu vấn đề trong một phút, người bị chất vấn trả lời ngay câu hỏi trong khoảng 3 phút.
+                </h4>
+                <p class="bonus_descrip">
+                    <a href="https://vnexpress.net/tin-tuc/thoi-su/dai-bieu-co-the-tranh-luan-lien-tuc-khi-chat-van-bo-truong-3598681.html" class="bonus_descrip2">
+                        Đại biểu có thể tranh luận liên tục khi chất vấn bộ trưởng
+                    </a>
+                </p>
+            </article>
+
+            <article class="list_news">
+                <h3 class="title_news"><a class="title_news a" href="https://video.vnexpress.net/tin-tuc/xa-hoi/1-000-nguoi-dieu-hanh-3km-trong-tet-nguyen-tieu-o-sai-gon-3717743.html">Hai Bộ trưởng tham gia thí điểm 'chất vấn và trả lời chất vấn ngay' </a></h3>
+                <div class=" mini_pic">
+                    <a href="https://vnexpress.net/tin-tuc/thoi-su/hai-bo-truong-tham-gia-thi-diem-chat-van-va-tra-loi-chat-van-ngay-3716232.html" class="pic_5x3">
+                        <img src="https://i-vnexpress.vnecdn.net/2018/03/03/163914botruongtraloichatvan1151997847062938667457-1520043093_140x84.jpg" />
+                    </a>
+                </div>
+                <h4 class="description">
+                    Đại biểu nêu vấn đề trong một phút, người bị chất vấn trả lời ngay câu hỏi trong khoảng 3 phút.
+                </h4>
+                <p class="bonus_descrip">
+                    <a href="https://vnexpress.net/tin-tuc/thoi-su/dai-bieu-co-the-tranh-luan-lien-tuc-khi-chat-van-bo-truong-3598681.html" class="bonus_descrip2">
+                        Đại biểu có thể tranh luận liên tục khi chất vấn bộ trưởng
+                    </a>
+                </p>
+            </article>
+
+            <article class="list_news">
+                <h3 class="title_news"><a class="title_news a" href="https://video.vnexpress.net/tin-tuc/xa-hoi/1-000-nguoi-dieu-hanh-3km-trong-tet-nguyen-tieu-o-sai-gon-3717743.html">Hai Bộ trưởng tham gia thí điểm 'chất vấn và trả lời chất vấn ngay' </a></h3>
+                <div class=" mini_pic">
+                    <a href="https://vnexpress.net/tin-tuc/thoi-su/hai-bo-truong-tham-gia-thi-diem-chat-van-va-tra-loi-chat-van-ngay-3716232.html" class="pic_5x3">
+                        <img src="https://i-vnexpress.vnecdn.net/2018/03/03/163914botruongtraloichatvan1151997847062938667457-1520043093_140x84.jpg" />
+                    </a>
+                </div>
+                <h4 class="description">
+                    Đại biểu nêu vấn đề trong một phút, người bị chất vấn trả lời ngay câu hỏi trong khoảng 3 phút.
+                </h4>
+                <p class="bonus_descrip">
+                    <a href="https://vnexpress.net/tin-tuc/thoi-su/dai-bieu-co-the-tranh-luan-lien-tuc-khi-chat-van-bo-truong-3598681.html" class="bonus_descrip2">
+                        Đại biểu có thể tranh luận liên tục khi chất vấn bộ trưởng
+                    </a>
+                </p>
+            </article>
+
+            <section class="menu_mini">
+                <div class="toppic1">
+                    <a href="https://vnexpress.net/tin-tuc/thoi-su" class="a toppic">  Thời sự</a>
+                </div>
+                <div class="toppic1">
+                    <a href="https://vnexpress.net/tin-tuc/thoi-su/nong-nghiep-sach" class="toppic3">Nông nghiệp sạch</a>
+                </div>
+            </section>
+            <article class="list_news2 ">
+                <h3 class="title_news"><a class="title_news a" href="https://vnexpress.net/tin-tuc/thoi-su/quang-binh-bat-ran-do-rap-tren-ngoi-mo-vo-danh-3717851.html">Quảng Bình bắt rắn, dỡ rạp trên ngôi mộ vô danh  </a></h3>
+                <div class=" mini_pic">
+                    <a href="https://vnexpress.net/tin-tuc/thoi-su/quang-binh-bat-ran-do-rap-tren-ngoi-mo-vo-danh-3717851.html" class="pic_5x3">
+                        <img src="https://i-vnexpress.vnecdn.net/2018/03/03/aIMG-9106-4022-1520045841_140x84.jpg" />
+                    </a>
+                </div>
+                <h4 class="description">
+                    Nhà chức trách Quảng Bình bắt con rắn khỏi ngôi mộ vô danh nhằm giảm bớt lượng người về đây thắp hương khấn vái.
+                </h4>
+                <ul class="list_title">
+                    <li class="bonus_descrip">
+                         <a href="https://vnexpress.net/tin-tuc/thoi-su/be-trai-bon-tuoi-bi-tam-dan-be-tong-o-muong-thuy-loi-de-tu-vong-3717890.html" class="bonus_descrip3">
+                             Bé trai bốn tuổi bị tấm đan bê tông ở mương thuỷ lợi đè tử vong 
+                         </a>
+                    </li>
+                    <li class="bonus_descrip">
+                        <a href="https://vnexpress.net/tin-tuc/thoi-su/hai-nha-may-thep-gay-o-nhiem-tai-da-nang-phai-di-doi-3717737.html" class="bonus_descrip3">
+                            Hai nhà máy thép gây ô nhiễm tại Đà Nẵng phải di dời 
+                        </a>
+                    </li>
+                </ul>               
+            </article>
+
+            <section class="menu_mini">
+                <div class="toppic1">
+                    <a href="https://vnexpress.net/tin-tuc/thoi-su" class="a toppic">  Thời sự</a>
+                </div>
+                <div class="toppic1">
+                    <a href="https://vnexpress.net/tin-tuc/thoi-su/nong-nghiep-sach" class="toppic3">Nông nghiệp sạch</a>
+                </div>
+            </section>
+            <article class="list_news2 ">
+                <h3 class="title_news"><a class="title_news a" href="https://vnexpress.net/tin-tuc/thoi-su/quang-binh-bat-ran-do-rap-tren-ngoi-mo-vo-danh-3717851.html">Quảng Bình bắt rắn, dỡ rạp trên ngôi mộ vô danh  </a></h3>
+                <div class=" mini_pic">
+                    <a href="https://vnexpress.net/tin-tuc/thoi-su/quang-binh-bat-ran-do-rap-tren-ngoi-mo-vo-danh-3717851.html" class="pic_5x3">
+                        <img src="https://i-vnexpress.vnecdn.net/2018/03/03/aIMG-9106-4022-1520045841_140x84.jpg" />
+                    </a>
+                </div>
+                <h4 class="description">
+                    Nhà chức trách Quảng Bình bắt con rắn khỏi ngôi mộ vô danh nhằm giảm bớt lượng người về đây thắp hương khấn vái.
+                </h4>
+                <ul class="list_title">
+                    <li class="bonus_descrip">
+                        <a href="https://vnexpress.net/tin-tuc/thoi-su/be-trai-bon-tuoi-bi-tam-dan-be-tong-o-muong-thuy-loi-de-tu-vong-3717890.html" class="bonus_descrip3">
+                            Bé trai bốn tuổi bị tấm đan bê tông ở mương thuỷ lợi đè tử vong
+                        </a>
+                    </li>
+                    <li class="bonus_descrip">
+                        <a href="https://vnexpress.net/tin-tuc/thoi-su/hai-nha-may-thep-gay-o-nhiem-tai-da-nang-phai-di-doi-3717737.html" class="bonus_descrip3">
+                            Hai nhà máy thép gây ô nhiễm tại Đà Nẵng phải di dời
+                        </a>
+                    </li>
+                </ul>
+            </article>
+
+            <section class="menu_mini">
+                <div class="toppic1">
+                    <a href="https://vnexpress.net/tin-tuc/thoi-su" class="a toppic">  Thời sự</a>
+                </div>
+                <div class="toppic1">
+                    <a href="https://vnexpress.net/tin-tuc/thoi-su/nong-nghiep-sach" class="toppic3">Nông nghiệp sạch</a>
+                </div>
+            </section>
+            <article class="list_news2 ">
+                <h3 class="title_news"><a class="title_news a" href="https://vnexpress.net/tin-tuc/thoi-su/quang-binh-bat-ran-do-rap-tren-ngoi-mo-vo-danh-3717851.html">Quảng Bình bắt rắn, dỡ rạp trên ngôi mộ vô danh  </a></h3>
+                <div class=" mini_pic">
+                    <a href="https://vnexpress.net/tin-tuc/thoi-su/quang-binh-bat-ran-do-rap-tren-ngoi-mo-vo-danh-3717851.html" class="pic_5x3">
+                        <img src="https://i-vnexpress.vnecdn.net/2018/03/03/aIMG-9106-4022-1520045841_140x84.jpg" />
+                    </a>
+                </div>
+                <h4 class="description">
+                    Nhà chức trách Quảng Bình bắt con rắn khỏi ngôi mộ vô danh nhằm giảm bớt lượng người về đây thắp hương khấn vái.
+                </h4>
+                <ul class="list_title">
+                    <li class="bonus_descrip">
+                        <a href="https://vnexpress.net/tin-tuc/thoi-su/be-trai-bon-tuoi-bi-tam-dan-be-tong-o-muong-thuy-loi-de-tu-vong-3717890.html" class="bonus_descrip3">
+                            Bé trai bốn tuổi bị tấm đan bê tông ở mương thuỷ lợi đè tử vong
+                        </a>
+                    </li>
+                    <li class="bonus_descrip">
+                        <a href="https://vnexpress.net/tin-tuc/thoi-su/hai-nha-may-thep-gay-o-nhiem-tai-da-nang-phai-di-doi-3717737.html" class="bonus_descrip3">
+                            Hai nhà máy thép gây ô nhiễm tại Đà Nẵng phải di dời
+                        </a>
+                    </li>
+                </ul>
+            </article>
+
+            <section class="menu_mini">
+                <div class="toppic1">
+                    <a href="https://vnexpress.net/tin-tuc/thoi-su" class="a toppic">  Thời sự</a>
+                </div>
+                <div class="toppic1">
+                    <a href="https://vnexpress.net/tin-tuc/thoi-su/nong-nghiep-sach" class="toppic3">Nông nghiệp sạch</a>
+                </div>
+            </section>
+            <article class="list_news2 ">
+                <h3 class="title_news"><a class="title_news a" href="https://vnexpress.net/tin-tuc/thoi-su/quang-binh-bat-ran-do-rap-tren-ngoi-mo-vo-danh-3717851.html">Quảng Bình bắt rắn, dỡ rạp trên ngôi mộ vô danh  </a></h3>
+                <div class=" mini_pic">
+                    <a href="https://vnexpress.net/tin-tuc/thoi-su/quang-binh-bat-ran-do-rap-tren-ngoi-mo-vo-danh-3717851.html" class="pic_5x3">
+                        <img src="https://i-vnexpress.vnecdn.net/2018/03/03/aIMG-9106-4022-1520045841_140x84.jpg" />
+                    </a>
+                </div>
+                <h4 class="description">
+                    Nhà chức trách Quảng Bình bắt con rắn khỏi ngôi mộ vô danh nhằm giảm bớt lượng người về đây thắp hương khấn vái.
+                </h4>
+                <ul class="list_title">
+                    <li class="bonus_descrip">
+                        <a href="https://vnexpress.net/tin-tuc/thoi-su/be-trai-bon-tuoi-bi-tam-dan-be-tong-o-muong-thuy-loi-de-tu-vong-3717890.html" class="bonus_descrip3">
+                            Bé trai bốn tuổi bị tấm đan bê tông ở mương thuỷ lợi đè tử vong
+                        </a>
+                    </li>
+                    <li class="bonus_descrip">
+                        <a href="https://vnexpress.net/tin-tuc/thoi-su/hai-nha-may-thep-gay-o-nhiem-tai-da-nang-phai-di-doi-3717737.html" class="bonus_descrip3">
+                            Hai nhà máy thép gây ô nhiễm tại Đà Nẵng phải di dời
+                        </a>
+                    </li>
+                </ul>
+            </article>
+
+            <section class="menu_mini">
+                <div class="toppic1">
+                    <a href="https://vnexpress.net/tin-tuc/thoi-su" class="a toppic">  Thời sự</a>
+                </div>
+                <div class="toppic1">
+                    <a href="https://vnexpress.net/tin-tuc/thoi-su/nong-nghiep-sach" class="toppic3">Nông nghiệp sạch</a>
+                </div>
+            </section>
+            <article class="list_news2 ">
+                <h3 class="title_news"><a class="title_news a" href="https://vnexpress.net/tin-tuc/thoi-su/quang-binh-bat-ran-do-rap-tren-ngoi-mo-vo-danh-3717851.html">Quảng Bình bắt rắn, dỡ rạp trên ngôi mộ vô danh  </a></h3>
+                <div class=" mini_pic">
+                    <a href="https://vnexpress.net/tin-tuc/thoi-su/quang-binh-bat-ran-do-rap-tren-ngoi-mo-vo-danh-3717851.html" class="pic_5x3">
+                        <img src="https://i-vnexpress.vnecdn.net/2018/03/03/aIMG-9106-4022-1520045841_140x84.jpg" />
+                    </a>
+                </div>
+                <h4 class="description">
+                    Nhà chức trách Quảng Bình bắt con rắn khỏi ngôi mộ vô danh nhằm giảm bớt lượng người về đây thắp hương khấn vái.
+                </h4>
+                <ul class="list_title">
+                    <li class="bonus_descrip">
+                        <a href="https://vnexpress.net/tin-tuc/thoi-su/be-trai-bon-tuoi-bi-tam-dan-be-tong-o-muong-thuy-loi-de-tu-vong-3717890.html" class="bonus_descrip3">
+                            Bé trai bốn tuổi bị tấm đan bê tông ở mương thuỷ lợi đè tử vong
+                        </a>
+                    </li>
+                    <li class="bonus_descrip">
+                        <a href="https://vnexpress.net/tin-tuc/thoi-su/hai-nha-may-thep-gay-o-nhiem-tai-da-nang-phai-di-doi-3717737.html" class="bonus_descrip3">
+                            Hai nhà máy thép gây ô nhiễm tại Đà Nẵng phải di dời
+                        </a>
+                    </li>
+                </ul>
+            </article>
+
+            <section class="menu_mini">
+                <div class="toppic1">
+                    <a href="https://vnexpress.net/tin-tuc/thoi-su" class="a toppic">  Thời sự</a>
+                </div>
+                <div class="toppic1">
+                    <a href="https://vnexpress.net/tin-tuc/thoi-su/nong-nghiep-sach" class="toppic3">Nông nghiệp sạch</a>
+                </div>
+            </section>
+            <article class="list_news2 ">
+                <h3 class="title_news"><a class="title_news a" href="https://vnexpress.net/tin-tuc/thoi-su/quang-binh-bat-ran-do-rap-tren-ngoi-mo-vo-danh-3717851.html">Quảng Bình bắt rắn, dỡ rạp trên ngôi mộ vô danh  </a></h3>
+                <div class=" mini_pic">
+                    <a href="https://vnexpress.net/tin-tuc/thoi-su/quang-binh-bat-ran-do-rap-tren-ngoi-mo-vo-danh-3717851.html" class="pic_5x3">
+                        <img src="https://i-vnexpress.vnecdn.net/2018/03/03/aIMG-9106-4022-1520045841_140x84.jpg" />
+                    </a>
+                </div>
+                <h4 class="description">
+                    Nhà chức trách Quảng Bình bắt con rắn khỏi ngôi mộ vô danh nhằm giảm bớt lượng người về đây thắp hương khấn vái.
+                </h4>
+                <ul class="list_title">
+                    <li class="bonus_descrip">
+                        <a href="https://vnexpress.net/tin-tuc/thoi-su/be-trai-bon-tuoi-bi-tam-dan-be-tong-o-muong-thuy-loi-de-tu-vong-3717890.html" class="bonus_descrip3">
+                            Bé trai bốn tuổi bị tấm đan bê tông ở mương thuỷ lợi đè tử vong
+                        </a>
+                    </li>
+                    <li class="bonus_descrip">
+                        <a href="https://vnexpress.net/tin-tuc/thoi-su/hai-nha-may-thep-gay-o-nhiem-tai-da-nang-phai-di-doi-3717737.html" class="bonus_descrip3">
+                            Hai nhà máy thép gây ô nhiễm tại Đà Nẵng phải di dời
+                        </a>
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="main2">
+            <section class="menu_mini">
+                <div class="toppic1">
+                    <a href="https://thethao.vnexpress.net/" class="a toppic">Thể thao</a>
+                </div>
+                <div class="toppic1">
+                    <a href="https://thethao.vnexpress.net/tin-tuc/bong-da" class="toppic3">Bóng đá</a>
+                </div>
+            </section>
+            <article class="list_news3">
+                <h3 class="title_news"><a class="title_news a" href="https://vnexpress.net/tin-tuc/giai-ngoai-hang-anh/man-city-dai-chien-chelsea-atletico-de-doa-barca-3717758.html">Man City đại chiến Chelsea, Atletico đe doạ Barca </a></h3>
+                <div class=" mini_pic">
+                    <a href="https://vnexpress.net/tin-tuc/giai-ngoai-hang-anh/man-city-dai-chien-chelsea-atletico-de-doa-barca-3717758.html" class="pic_5x3">
+                        <img src="https://i-thethao.vnecdn.net/2018/03/03/Untitled-1520018559-8873-1520018569_140x84.jpg" />
+                    </a>
+                </div>
+                <h4 class="description">
+                    Cuối tuần này, Ngoại hạng Anh chứng kiến trận đấu của một cuộc chuyển giao trong tương lai, còn tại La Liga là cuộc chiến
+                </h4>              
+            </article>
+            <ul class="list_title2">
+                <li class="bonus_descrip">
+                    <a href="https://thethao.vnexpress.net/tin-tuc/bong-da-trong-nuoc/thu-mon-quay-lung-cho-doi-thu-ghi-ban-duoc-vff-xoa-an-3717759.html" class="bonus_descrip4">
+                        Thủ môn quay lưng cho đối thủ ghi bàn được VFF xoá án 
+                    </a>
+                </li>
+                <li class="bonus_descrip">
+                    <a href="https://thethao.vnexpress.net/tin-tuc/giai-ngoai-hang-anh/conte-clb-phai-the-hien-tham-vong-khong-phai-hlv-3717879.html" class="bonus_descrip4">
+                        Conte: 'CLB phải thể hiện tham vọng, không phải HLV' 
+                    </a>
+                </li>
+            </ul>
+
+            <section class="menu_mini">
+                <div class="toppic1">
+                    <a href="https://thethao.vnexpress.net/" class="a toppic">Thể thao</a>
+                </div>
+                <div class="toppic1">
+                    <a href="https://thethao.vnexpress.net/tin-tuc/bong-da" class="toppic3">Bóng đá</a>
+                </div>
+
+            </section>
+            <article class="list_news3">
+                <h3 class="title_news"><a class="title_news a" href="https://vnexpress.net/tin-tuc/giai-ngoai-hang-anh/man-city-dai-chien-chelsea-atletico-de-doa-barca-3717758.html">Man City đại chiến Chelsea, Atletico đe doạ Barca </a></h3>
+                <div class=" mini_pic">
+                    <a href="https://vnexpress.net/tin-tuc/giai-ngoai-hang-anh/man-city-dai-chien-chelsea-atletico-de-doa-barca-3717758.html" class="pic_5x3">
+                        <img src="https://i-thethao.vnecdn.net/2018/03/03/Untitled-1520018559-8873-1520018569_140x84.jpg" />
+                    </a>
+                </div>
+                <h4 class="description">
+                    Cuối tuần này, Ngoại hạng Anh chứng kiến trận đấu của một cuộc chuyển giao trong tương lai, còn tại La Liga là cuộc chiến
+                </h4>
+            </article>
+            <ul class="list_title2">
+                <li class="bonus_descrip">
+                    <a href="https://thethao.vnexpress.net/tin-tuc/bong-da-trong-nuoc/thu-mon-quay-lung-cho-doi-thu-ghi-ban-duoc-vff-xoa-an-3717759.html" class="bonus_descrip4">
+                        Thủ môn quay lưng cho đối thủ ghi bàn được VFF xoá án
+                    </a>
+                </li>
+                <li class="bonus_descrip">
+                    <a href="https://thethao.vnexpress.net/tin-tuc/giai-ngoai-hang-anh/conte-clb-phai-the-hien-tham-vong-khong-phai-hlv-3717879.html" class="bonus_descrip4">
+                        Conte: 'CLB phải thể hiện tham vọng, không phải HLV'
+                    </a>
+                </li>
+            </ul>
+
+            <section class="menu_mini">
+                <div class="toppic1">
+                    <a href="https://thethao.vnexpress.net/" class="a toppic">Thể thao</a>
+                </div>
+                <div class="toppic1">
+                    <a href="https://thethao.vnexpress.net/tin-tuc/bong-da" class="toppic3">Bóng đá</a>
+                </div>
+
+            </section>
+            <article class="list_news3">
+                <h3 class="title_news"><a class="title_news a" href="https://vnexpress.net/tin-tuc/giai-ngoai-hang-anh/man-city-dai-chien-chelsea-atletico-de-doa-barca-3717758.html">Man City đại chiến Chelsea, Atletico đe doạ Barca </a></h3>
+                <div class=" mini_pic">
+                    <a href="https://vnexpress.net/tin-tuc/giai-ngoai-hang-anh/man-city-dai-chien-chelsea-atletico-de-doa-barca-3717758.html" class="pic_5x3">
+                        <img src="https://i-thethao.vnecdn.net/2018/03/03/Untitled-1520018559-8873-1520018569_140x84.jpg" />
+                    </a>
+                </div>
+                <h4 class="description">
+                    Cuối tuần này, Ngoại hạng Anh chứng kiến trận đấu của một cuộc chuyển giao trong tương lai, còn tại La Liga là cuộc chiến
+                </h4>
+            </article>
+            <ul class="list_title2">
+                <li class="bonus_descrip">
+                    <a href="https://thethao.vnexpress.net/tin-tuc/bong-da-trong-nuoc/thu-mon-quay-lung-cho-doi-thu-ghi-ban-duoc-vff-xoa-an-3717759.html" class="bonus_descrip4">
+                        Thủ môn quay lưng cho đối thủ ghi bàn được VFF xoá án
+                    </a>
+                </li>
+                <li class="bonus_descrip">
+                    <a href="https://thethao.vnexpress.net/tin-tuc/giai-ngoai-hang-anh/conte-clb-phai-the-hien-tham-vong-khong-phai-hlv-3717879.html" class="bonus_descrip4">
+                        Conte: 'CLB phải thể hiện tham vọng, không phải HLV'
+                    </a>
+                </li>
+            </ul>
+
+            <section class="menu_mini">
+                <div class="toppic1">
+                    <a href="https://thethao.vnexpress.net/" class="a toppic">Thể thao</a>
+                </div>
+                <div class="toppic1">
+                    <a href="https://thethao.vnexpress.net/tin-tuc/bong-da" class="toppic3">Bóng đá</a>
+                </div>
+
+            </section>
+            <article class="list_news3">
+                <h3 class="title_news"><a class="title_news a" href="https://vnexpress.net/tin-tuc/giai-ngoai-hang-anh/man-city-dai-chien-chelsea-atletico-de-doa-barca-3717758.html">Man City đại chiến Chelsea, Atletico đe doạ Barca </a></h3>
+                <div class=" mini_pic">
+                    <a href="https://vnexpress.net/tin-tuc/giai-ngoai-hang-anh/man-city-dai-chien-chelsea-atletico-de-doa-barca-3717758.html" class="pic_5x3">
+                        <img src="https://i-thethao.vnecdn.net/2018/03/03/Untitled-1520018559-8873-1520018569_140x84.jpg" />
+                    </a>
+                </div>
+                <h4 class="description">
+                    Cuối tuần này, Ngoại hạng Anh chứng kiến trận đấu của một cuộc chuyển giao trong tương lai, còn tại La Liga là cuộc chiến
+                </h4>
+            </article>
+            <ul class="list_title2">
+                <li class="bonus_descrip">
+                    <a href="https://thethao.vnexpress.net/tin-tuc/bong-da-trong-nuoc/thu-mon-quay-lung-cho-doi-thu-ghi-ban-duoc-vff-xoa-an-3717759.html" class="bonus_descrip4">
+                        Thủ môn quay lưng cho đối thủ ghi bàn được VFF xoá án
+                    </a>
+                </li>
+                <li class="bonus_descrip">
+                    <a href="https://thethao.vnexpress.net/tin-tuc/giai-ngoai-hang-anh/conte-clb-phai-the-hien-tham-vong-khong-phai-hlv-3717879.html" class="bonus_descrip4">
+                        Conte: 'CLB phải thể hiện tham vọng, không phải HLV'
+                    </a>
+                </li>
+            </ul>
+
+            <section class="menu_mini">
+                <div class="toppic1">
+                    <a href="https://thethao.vnexpress.net/" class="a toppic">Thể thao</a>
+                </div>
+                <div class="toppic1">
+                    <a href="https://thethao.vnexpress.net/tin-tuc/bong-da" class="toppic3">Bóng đá</a>
+                </div>
+
+            </section>
+            <article class="list_news3">
+                <h3 class="title_news"><a class="title_news a" href="https://vnexpress.net/tin-tuc/giai-ngoai-hang-anh/man-city-dai-chien-chelsea-atletico-de-doa-barca-3717758.html">Man City đại chiến Chelsea, Atletico đe doạ Barca </a></h3>
+                <div class=" mini_pic">
+                    <a href="https://vnexpress.net/tin-tuc/giai-ngoai-hang-anh/man-city-dai-chien-chelsea-atletico-de-doa-barca-3717758.html" class="pic_5x3">
+                        <img src="https://i-thethao.vnecdn.net/2018/03/03/Untitled-1520018559-8873-1520018569_140x84.jpg" />
+                    </a>
+                </div>
+                <h4 class="description">
+                    Cuối tuần này, Ngoại hạng Anh chứng kiến trận đấu của một cuộc chuyển giao trong tương lai, còn tại La Liga là cuộc chiến
+                </h4>
+            </article>
+            <ul class="list_title2">
+                <li class="bonus_descrip">
+                    <a href="https://thethao.vnexpress.net/tin-tuc/bong-da-trong-nuoc/thu-mon-quay-lung-cho-doi-thu-ghi-ban-duoc-vff-xoa-an-3717759.html" class="bonus_descrip4">
+                        Thủ môn quay lưng cho đối thủ ghi bàn được VFF xoá án
+                    </a>
+                </li>
+                <li class="bonus_descrip">
+                    <a href="https://thethao.vnexpress.net/tin-tuc/giai-ngoai-hang-anh/conte-clb-phai-the-hien-tham-vong-khong-phai-hlv-3717879.html" class="bonus_descrip4">
+                        Conte: 'CLB phải thể hiện tham vọng, không phải HLV'
+                    </a>
+                </li>
+            </ul>
+
+            <section class="menu_mini">
+                <div class="toppic1">
+                    <a href="https://thethao.vnexpress.net/" class="a toppic">Thể thao</a>
+                </div>
+                <div class="toppic1">
+                    <a href="https://thethao.vnexpress.net/tin-tuc/bong-da" class="toppic3">Bóng đá</a>
+                </div>
+
+            </section>
+            <article class="list_news3">
+                <h3 class="title_news"><a class="title_news a" href="https://vnexpress.net/tin-tuc/giai-ngoai-hang-anh/man-city-dai-chien-chelsea-atletico-de-doa-barca-3717758.html">Man City đại chiến Chelsea, Atletico đe doạ Barca </a></h3>
+                <div class=" mini_pic">
+                    <a href="https://vnexpress.net/tin-tuc/giai-ngoai-hang-anh/man-city-dai-chien-chelsea-atletico-de-doa-barca-3717758.html" class="pic_5x3">
+                        <img src="https://i-thethao.vnecdn.net/2018/03/03/Untitled-1520018559-8873-1520018569_140x84.jpg" />
+                    </a>
+                </div>
+                <h4 class="description">
+                    Cuối tuần này, Ngoại hạng Anh chứng kiến trận đấu của một cuộc chuyển giao trong tương lai, còn tại La Liga là cuộc chiến
+                </h4>
+            </article>
+            <ul class="list_title2">
+                <li class="bonus_descrip">
+                    <a href="https://thethao.vnexpress.net/tin-tuc/bong-da-trong-nuoc/thu-mon-quay-lung-cho-doi-thu-ghi-ban-duoc-vff-xoa-an-3717759.html" class="bonus_descrip4">
+                        Thủ môn quay lưng cho đối thủ ghi bàn được VFF xoá án
+                    </a>
+                </li>
+                <li class="bonus_descrip">
+                    <a href="https://thethao.vnexpress.net/tin-tuc/giai-ngoai-hang-anh/conte-clb-phai-the-hien-tham-vong-khong-phai-hlv-3717879.html" class="bonus_descrip4">
+                        Conte: 'CLB phải thể hiện tham vọng, không phải HLV'
+                    </a>
+                </li>
+            </ul>
+
+            <section class="menu_mini">
+                <div class="toppic1">
+                    <a href="https://thethao.vnexpress.net/" class="a toppic">Thể thao</a>
+                </div>
+                <div class="toppic1">
+                    <a href="https://thethao.vnexpress.net/tin-tuc/bong-da" class="toppic3">Bóng đá</a>
+                </div>
+
+            </section>
+            <article class="list_news3">
+                <h3 class="title_news"><a class="title_news a" href="https://vnexpress.net/tin-tuc/giai-ngoai-hang-anh/man-city-dai-chien-chelsea-atletico-de-doa-barca-3717758.html">Man City đại chiến Chelsea, Atletico đe doạ Barca </a></h3>
+                <div class=" mini_pic">
+                    <a href="https://vnexpress.net/tin-tuc/giai-ngoai-hang-anh/man-city-dai-chien-chelsea-atletico-de-doa-barca-3717758.html" class="pic_5x3">
+                        <img src="https://i-thethao.vnecdn.net/2018/03/03/Untitled-1520018559-8873-1520018569_140x84.jpg" />
+                    </a>
+                </div>
+                <h4 class="description">
+                    Cuối tuần này, Ngoại hạng Anh chứng kiến trận đấu của một cuộc chuyển giao trong tương lai, còn tại La Liga là cuộc chiến
+                </h4>
+            </article>
+            <ul class="list_title2">
+                <li class="bonus_descrip">
+                    <a href="https://thethao.vnexpress.net/tin-tuc/bong-da-trong-nuoc/thu-mon-quay-lung-cho-doi-thu-ghi-ban-duoc-vff-xoa-an-3717759.html" class="bonus_descrip4">
+                        Thủ môn quay lưng cho đối thủ ghi bàn được VFF xoá án
+                    </a>
+                </li>
+                <li class="bonus_descrip">
+                    <a href="https://thethao.vnexpress.net/tin-tuc/giai-ngoai-hang-anh/conte-clb-phai-the-hien-tham-vong-khong-phai-hlv-3717879.html" class="bonus_descrip4">
+                        Conte: 'CLB phải thể hiện tham vọng, không phải HLV'
+                    </a>
+                </li>
+            </ul>
+
+            <section class="menu_mini">
+                <div class="toppic1">
+                    <a href="https://thethao.vnexpress.net/" class="a toppic">Thể thao</a>
+                </div>
+                <div class="toppic1">
+                    <a href="https://thethao.vnexpress.net/tin-tuc/bong-da" class="toppic3">Bóng đá</a>
+                </div>
+
+            </section>
+            <article class="list_news3">
+                <h3 class="title_news"><a class="title_news a" href="https://vnexpress.net/tin-tuc/giai-ngoai-hang-anh/man-city-dai-chien-chelsea-atletico-de-doa-barca-3717758.html">Man City đại chiến Chelsea, Atletico đe doạ Barca </a></h3>
+                <div class=" mini_pic">
+                    <a href="https://vnexpress.net/tin-tuc/giai-ngoai-hang-anh/man-city-dai-chien-chelsea-atletico-de-doa-barca-3717758.html" class="pic_5x3">
+                        <img src="https://i-thethao.vnecdn.net/2018/03/03/Untitled-1520018559-8873-1520018569_140x84.jpg" />
+                    </a>
+                </div>
+                <h4 class="description">
+                    Cuối tuần này, Ngoại hạng Anh chứng kiến trận đấu của một cuộc chuyển giao trong tương lai, còn tại La Liga là cuộc chiến
+                </h4>
+            </article>
+            <ul class="list_title2">
+                <li class="bonus_descrip">
+                    <a href="https://thethao.vnexpress.net/tin-tuc/bong-da-trong-nuoc/thu-mon-quay-lung-cho-doi-thu-ghi-ban-duoc-vff-xoa-an-3717759.html" class="bonus_descrip4">
+                        Thủ môn quay lưng cho đối thủ ghi bàn được VFF xoá án
+                    </a>
+                </li>
+                <li class="bonus_descrip">
+                    <a href="https://thethao.vnexpress.net/tin-tuc/giai-ngoai-hang-anh/conte-clb-phai-the-hien-tham-vong-khong-phai-hlv-3717879.html" class="bonus_descrip4">
+                        Conte: 'CLB phải thể hiện tham vọng, không phải HLV'
+                    </a>
+                </li>
+            </ul>
+
+            <section class="menu_mini">
+                <div class="toppic1">
+                    <a href="https://thethao.vnexpress.net/" class="a toppic">Thể thao</a>
+                </div>
+                <div class="toppic1">
+                    <a href="https://thethao.vnexpress.net/tin-tuc/bong-da" class="toppic3">Bóng đá</a>
+                </div>
+
+            </section>
+            <article class="list_news3">
+                <h3 class="title_news"><a class="title_news a" href="https://vnexpress.net/tin-tuc/giai-ngoai-hang-anh/man-city-dai-chien-chelsea-atletico-de-doa-barca-3717758.html">Man City đại chiến Chelsea, Atletico đe doạ Barca </a></h3>
+                <div class=" mini_pic">
+                    <a href="https://vnexpress.net/tin-tuc/giai-ngoai-hang-anh/man-city-dai-chien-chelsea-atletico-de-doa-barca-3717758.html" class="pic_5x3">
+                        <img src="https://i-thethao.vnecdn.net/2018/03/03/Untitled-1520018559-8873-1520018569_140x84.jpg" />
+                    </a>
+                </div>
+                <h4 class="description">
+                    Cuối tuần này, Ngoại hạng Anh chứng kiến trận đấu của một cuộc chuyển giao trong tương lai, còn tại La Liga là cuộc chiến
+                </h4>
+            </article>
+            <ul class="list_title2">
+                <li class="bonus_descrip">
+                    <a href="https://thethao.vnexpress.net/tin-tuc/bong-da-trong-nuoc/thu-mon-quay-lung-cho-doi-thu-ghi-ban-duoc-vff-xoa-an-3717759.html" class="bonus_descrip4">
+                        Thủ môn quay lưng cho đối thủ ghi bàn được VFF xoá án
+                    </a>
+                </li>
+                <li class="bonus_descrip">
+                    <a href="https://thethao.vnexpress.net/tin-tuc/giai-ngoai-hang-anh/conte-clb-phai-the-hien-tham-vong-khong-phai-hlv-3717879.html" class="bonus_descrip4">
+                        Conte: 'CLB phải thể hiện tham vọng, không phải HLV'
+                    </a>
+                </li>
+            </ul>
+
+            <section class="menu_mini">
+                <div class="toppic1">
+                    <a href="https://thethao.vnexpress.net/" class="a toppic">Thể thao</a>
+                </div>
+                <div class="toppic1">
+                    <a href="https://thethao.vnexpress.net/tin-tuc/bong-da" class="toppic3">Bóng đá</a>
+                </div>
+
+            </section>
+            <article class="list_news3">
+                <h3 class="title_news"><a class="title_news a" href="https://vnexpress.net/tin-tuc/giai-ngoai-hang-anh/man-city-dai-chien-chelsea-atletico-de-doa-barca-3717758.html">Man City đại chiến Chelsea, Atletico đe doạ Barca </a></h3>
+                <div class=" mini_pic">
+                    <a href="https://vnexpress.net/tin-tuc/giai-ngoai-hang-anh/man-city-dai-chien-chelsea-atletico-de-doa-barca-3717758.html" class="pic_5x3">
+                        <img src="https://i-thethao.vnecdn.net/2018/03/03/Untitled-1520018559-8873-1520018569_140x84.jpg" />
+                    </a>
+                </div>
+                <h4 class="description">
+                    Cuối tuần này, Ngoại hạng Anh chứng kiến trận đấu của một cuộc chuyển giao trong tương lai, còn tại La Liga là cuộc chiến
+                </h4>
+            </article>
+            <ul class="list_title2">
+                <li class="bonus_descrip">
+                    <a href="https://thethao.vnexpress.net/tin-tuc/bong-da-trong-nuoc/thu-mon-quay-lung-cho-doi-thu-ghi-ban-duoc-vff-xoa-an-3717759.html" class="bonus_descrip4">
+                        Thủ môn quay lưng cho đối thủ ghi bàn được VFF xoá án
+                    </a>
+                </li>
+                <li class="bonus_descrip">
+                    <a href="https://thethao.vnexpress.net/tin-tuc/giai-ngoai-hang-anh/conte-clb-phai-the-hien-tham-vong-khong-phai-hlv-3717879.html" class="bonus_descrip4">
+                        Conte: 'CLB phải thể hiện tham vọng, không phải HLV'
+                    </a>
+                </li>
+            </ul>
+
+            <section class="menu_mini">
+                <div class="toppic1">
+                    <a href="https://thethao.vnexpress.net/" class="a toppic">Thể thao</a>
+                </div>
+                <div class="toppic1">
+                    <a href="https://thethao.vnexpress.net/tin-tuc/bong-da" class="toppic3">Bóng đá</a>
+                </div>
+
+            </section>
+            <article class="list_news3">
+                <h3 class="title_news"><a class="title_news a" href="https://vnexpress.net/tin-tuc/giai-ngoai-hang-anh/man-city-dai-chien-chelsea-atletico-de-doa-barca-3717758.html">Man City đại chiến Chelsea, Atletico đe doạ Barca </a></h3>
+                <div class=" mini_pic">
+                    <a href="https://vnexpress.net/tin-tuc/giai-ngoai-hang-anh/man-city-dai-chien-chelsea-atletico-de-doa-barca-3717758.html" class="pic_5x3">
+                        <img src="https://i-thethao.vnecdn.net/2018/03/03/Untitled-1520018559-8873-1520018569_140x84.jpg" />
+                    </a>
+                </div>
+                <h4 class="description">
+                    Cuối tuần này, Ngoại hạng Anh chứng kiến trận đấu của một cuộc chuyển giao trong tương lai, còn tại La Liga là cuộc chiến
+                </h4>
+            </article>
+            <ul class="list_title2">
+                <li class="bonus_descrip">
+                    <a href="https://thethao.vnexpress.net/tin-tuc/bong-da-trong-nuoc/thu-mon-quay-lung-cho-doi-thu-ghi-ban-duoc-vff-xoa-an-3717759.html" class="bonus_descrip4">
+                        Thủ môn quay lưng cho đối thủ ghi bàn được VFF xoá án
+                    </a>
+                </li>
+                <li class="bonus_descrip">
+                    <a href="https://thethao.vnexpress.net/tin-tuc/giai-ngoai-hang-anh/conte-clb-phai-the-hien-tham-vong-khong-phai-hlv-3717879.html" class="bonus_descrip4">
+                        Conte: 'CLB phải thể hiện tham vọng, không phải HLV'
+                    </a>
+                </li>
+            </ul>
+
+            <section class="menu_mini">
+                <div class="toppic1">
+                    <a href="https://thethao.vnexpress.net/" class="a toppic">Thể thao</a>
+                </div>
+                <div class="toppic1">
+                    <a href="https://thethao.vnexpress.net/tin-tuc/bong-da" class="toppic3">Bóng đá</a>
+                </div>
+
+            </section>
+            <article class="list_news3">
+                <h3 class="title_news"><a class="title_news a" href="https://vnexpress.net/tin-tuc/giai-ngoai-hang-anh/man-city-dai-chien-chelsea-atletico-de-doa-barca-3717758.html">Man City đại chiến Chelsea, Atletico đe doạ Barca </a></h3>
+                <div class=" mini_pic">
+                    <a href="https://vnexpress.net/tin-tuc/giai-ngoai-hang-anh/man-city-dai-chien-chelsea-atletico-de-doa-barca-3717758.html" class="pic_5x3">
+                        <img src="https://i-thethao.vnecdn.net/2018/03/03/Untitled-1520018559-8873-1520018569_140x84.jpg" />
+                    </a>
+                </div>
+                <h4 class="description">
+                    Cuối tuần này, Ngoại hạng Anh chứng kiến trận đấu của một cuộc chuyển giao trong tương lai, còn tại La Liga là cuộc chiến
+                </h4>
+            </article>
+            <ul class="list_title2">
+                <li class="bonus_descrip">
+                    <a href="https://thethao.vnexpress.net/tin-tuc/bong-da-trong-nuoc/thu-mon-quay-lung-cho-doi-thu-ghi-ban-duoc-vff-xoa-an-3717759.html" class="bonus_descrip4">
+                        Thủ môn quay lưng cho đối thủ ghi bàn được VFF xoá án
+                    </a>
+                </li>
+                <li class="bonus_descrip">
+                    <a href="https://thethao.vnexpress.net/tin-tuc/giai-ngoai-hang-anh/conte-clb-phai-the-hien-tham-vong-khong-phai-hlv-3717879.html" class="bonus_descrip4">
+                        Conte: 'CLB phải thể hiện tham vọng, không phải HLV'
+                    </a>
+                </li>
+            </ul>
+
+            <section class="menu_mini">
+                <div class="toppic1">
+                    <a href="https://thethao.vnexpress.net/" class="a toppic">Thể thao</a>
+                </div>
+                <div class="toppic1">
+                    <a href="https://thethao.vnexpress.net/tin-tuc/bong-da" class="toppic3">Bóng đá</a>
+                </div>
+
+            </section>
+            <article class="list_news3">
+                <h3 class="title_news"><a class="title_news a" href="https://vnexpress.net/tin-tuc/giai-ngoai-hang-anh/man-city-dai-chien-chelsea-atletico-de-doa-barca-3717758.html">Man City đại chiến Chelsea, Atletico đe doạ Barca </a></h3>
+                <div class=" mini_pic">
+                    <a href="https://vnexpress.net/tin-tuc/giai-ngoai-hang-anh/man-city-dai-chien-chelsea-atletico-de-doa-barca-3717758.html" class="pic_5x3">
+                        <img src="https://i-thethao.vnecdn.net/2018/03/03/Untitled-1520018559-8873-1520018569_140x84.jpg" />
+                    </a>
+                </div>
+                <h4 class="description">
+                    Cuối tuần này, Ngoại hạng Anh chứng kiến trận đấu của một cuộc chuyển giao trong tương lai, còn tại La Liga là cuộc chiến
+                </h4>
+            </article>
+            <ul class="list_title2">
+                <li class="bonus_descrip">
+                    <a href="https://thethao.vnexpress.net/tin-tuc/bong-da-trong-nuoc/thu-mon-quay-lung-cho-doi-thu-ghi-ban-duoc-vff-xoa-an-3717759.html" class="bonus_descrip4">
+                        Thủ môn quay lưng cho đối thủ ghi bàn được VFF xoá án
+                    </a>
+                </li>
+                <li class="bonus_descrip">
+                    <a href="https://thethao.vnexpress.net/tin-tuc/giai-ngoai-hang-anh/conte-clb-phai-the-hien-tham-vong-khong-phai-hlv-3717879.html" class="bonus_descrip4">
+                        Conte: 'CLB phải thể hiện tham vọng, không phải HLV'
+                    </a>
+                </li>
+            </ul>
+
+            <section class="menu_mini">
+                <div class="toppic1">
+                    <a href="https://thethao.vnexpress.net/" class="a toppic">Thể thao</a>
+                </div>
+                <div class="toppic1">
+                    <a href="https://thethao.vnexpress.net/tin-tuc/bong-da" class="toppic3">Bóng đá</a>
+                </div>
+
+            </section>
+            <article class="list_news3">
+                <h3 class="title_news"><a class="title_news a" href="https://vnexpress.net/tin-tuc/giai-ngoai-hang-anh/man-city-dai-chien-chelsea-atletico-de-doa-barca-3717758.html">Man City đại chiến Chelsea, Atletico đe doạ Barca </a></h3>
+                <div class=" mini_pic">
+                    <a href="https://vnexpress.net/tin-tuc/giai-ngoai-hang-anh/man-city-dai-chien-chelsea-atletico-de-doa-barca-3717758.html" class="pic_5x3">
+                        <img src="https://i-thethao.vnecdn.net/2018/03/03/Untitled-1520018559-8873-1520018569_140x84.jpg" />
+                    </a>
+                </div>
+                <h4 class="description">
+                    Cuối tuần này, Ngoại hạng Anh chứng kiến trận đấu của một cuộc chuyển giao trong tương lai, còn tại La Liga là cuộc chiến
+                </h4>
+            </article>
+            <ul class="list_title2">
+                <li class="bonus_descrip">
+                    <a href="https://thethao.vnexpress.net/tin-tuc/bong-da-trong-nuoc/thu-mon-quay-lung-cho-doi-thu-ghi-ban-duoc-vff-xoa-an-3717759.html" class="bonus_descrip4">
+                        Thủ môn quay lưng cho đối thủ ghi bàn được VFF xoá án
+                    </a>
+                </li>
+                <li class="bonus_descrip">
+                    <a href="https://thethao.vnexpress.net/tin-tuc/giai-ngoai-hang-anh/conte-clb-phai-the-hien-tham-vong-khong-phai-hlv-3717879.html" class="bonus_descrip4">
+                        Conte: 'CLB phải thể hiện tham vọng, không phải HLV'
+                    </a>
+                </li>
+            </ul>
+
+            <section class="menu_mini">
+                <div class="toppic1">
+                    <a href="https://thethao.vnexpress.net/" class="a toppic">Thể thao</a>
+                </div>
+                <div class="toppic1">
+                    <a href="https://thethao.vnexpress.net/tin-tuc/bong-da" class="toppic3">Bóng đá</a>
+                </div>
+
+            </section>
+            <article class="list_news3">
+                <h3 class="title_news"><a class="title_news a" href="https://vnexpress.net/tin-tuc/giai-ngoai-hang-anh/man-city-dai-chien-chelsea-atletico-de-doa-barca-3717758.html">Man City đại chiến Chelsea, Atletico đe doạ Barca </a></h3>
+                <div class=" mini_pic">
+                    <a href="https://vnexpress.net/tin-tuc/giai-ngoai-hang-anh/man-city-dai-chien-chelsea-atletico-de-doa-barca-3717758.html" class="pic_5x3">
+                        <img src="https://i-thethao.vnecdn.net/2018/03/03/Untitled-1520018559-8873-1520018569_140x84.jpg" />
+                    </a>
+                </div>
+                <h4 class="description">
+                    Cuối tuần này, Ngoại hạng Anh chứng kiến trận đấu của một cuộc chuyển giao trong tương lai, còn tại La Liga là cuộc chiến
+                </h4>
+            </article>
+            <ul class="list_title2">
+                <li class="bonus_descrip">
+                    <a href="https://thethao.vnexpress.net/tin-tuc/bong-da-trong-nuoc/thu-mon-quay-lung-cho-doi-thu-ghi-ban-duoc-vff-xoa-an-3717759.html" class="bonus_descrip4">
+                        Thủ môn quay lưng cho đối thủ ghi bàn được VFF xoá án
+                    </a>
+                </li>
+                <li class="bonus_descrip">
+                    <a href="https://thethao.vnexpress.net/tin-tuc/giai-ngoai-hang-anh/conte-clb-phai-the-hien-tham-vong-khong-phai-hlv-3717879.html" class="bonus_descrip4">
+                        Conte: 'CLB phải thể hiện tham vọng, không phải HLV'
+                    </a>
+                </li>
+            </ul>
+
+            <section class="menu_mini">
+                <div class="toppic1">
+                    <a href="https://thethao.vnexpress.net/" class="a toppic">Thể thao</a>
+                </div>
+                <div class="toppic1">
+                    <a href="https://thethao.vnexpress.net/tin-tuc/bong-da" class="toppic3">Bóng đá</a>
+                </div>
+
+            </section>
+            <article class="list_news3">
+                <h3 class="title_news"><a class="title_news a" href="https://vnexpress.net/tin-tuc/giai-ngoai-hang-anh/man-city-dai-chien-chelsea-atletico-de-doa-barca-3717758.html">Man City đại chiến Chelsea, Atletico đe doạ Barca </a></h3>
+                <div class=" mini_pic">
+                    <a href="https://vnexpress.net/tin-tuc/giai-ngoai-hang-anh/man-city-dai-chien-chelsea-atletico-de-doa-barca-3717758.html" class="pic_5x3">
+                        <img src="https://i-thethao.vnecdn.net/2018/03/03/Untitled-1520018559-8873-1520018569_140x84.jpg" />
+                    </a>
+                </div>
+                <h4 class="description">
+                    Cuối tuần này, Ngoại hạng Anh chứng kiến trận đấu của một cuộc chuyển giao trong tương lai, còn tại La Liga là cuộc chiến
+                </h4>
+            </article>
+            <ul class="list_title2">
+                <li class="bonus_descrip">
+                    <a href="https://thethao.vnexpress.net/tin-tuc/bong-da-trong-nuoc/thu-mon-quay-lung-cho-doi-thu-ghi-ban-duoc-vff-xoa-an-3717759.html" class="bonus_descrip4">
+                        Thủ môn quay lưng cho đối thủ ghi bàn được VFF xoá án
+                    </a>
+                </li>
+                <li class="bonus_descrip">
+                    <a href="https://thethao.vnexpress.net/tin-tuc/giai-ngoai-hang-anh/conte-clb-phai-the-hien-tham-vong-khong-phai-hlv-3717879.html" class="bonus_descrip4">
+                        Conte: 'CLB phải thể hiện tham vọng, không phải HLV'
+                    </a>
+                </li>
+            </ul>
+
+            <section class="menu_mini">
+                <div class="toppic1">
+                    <a href="https://thethao.vnexpress.net/" class="a toppic">Thể thao</a>
+                </div>
+                <div class="toppic1">
+                    <a href="https://thethao.vnexpress.net/tin-tuc/bong-da" class="toppic3">Bóng đá</a>
+                </div>
+
+            </section>
+            <article class="list_news3">
+                <h3 class="title_news"><a class="title_news a" href="https://vnexpress.net/tin-tuc/giai-ngoai-hang-anh/man-city-dai-chien-chelsea-atletico-de-doa-barca-3717758.html">Man City đại chiến Chelsea, Atletico đe doạ Barca </a></h3>
+                <div class=" mini_pic">
+                    <a href="https://vnexpress.net/tin-tuc/giai-ngoai-hang-anh/man-city-dai-chien-chelsea-atletico-de-doa-barca-3717758.html" class="pic_5x3">
+                        <img src="https://i-thethao.vnecdn.net/2018/03/03/Untitled-1520018559-8873-1520018569_140x84.jpg" />
+                    </a>
+                </div>
+                <h4 class="description">
+                    Cuối tuần này, Ngoại hạng Anh chứng kiến trận đấu của một cuộc chuyển giao trong tương lai, còn tại La Liga là cuộc chiến
+                </h4>
+            </article>
+            <ul class="list_title2">
+                <li class="bonus_descrip">
+                    <a href="https://thethao.vnexpress.net/tin-tuc/bong-da-trong-nuoc/thu-mon-quay-lung-cho-doi-thu-ghi-ban-duoc-vff-xoa-an-3717759.html" class="bonus_descrip4">
+                        Thủ môn quay lưng cho đối thủ ghi bàn được VFF xoá án
+                    </a>
+                </li>
+                <li class="bonus_descrip">
+                    <a href="https://thethao.vnexpress.net/tin-tuc/giai-ngoai-hang-anh/conte-clb-phai-the-hien-tham-vong-khong-phai-hlv-3717879.html" class="bonus_descrip4">
+                        Conte: 'CLB phải thể hiện tham vọng, không phải HLV'
+                    </a>
+                </li>
+            </ul>
+            <section class="menu_mini">
+                <div class="toppic1">
+                    <a href="https://thethao.vnexpress.net/" class="a toppic">Thể thao</a>
+                </div>
+                <div class="toppic1">
+                    <a href="https://thethao.vnexpress.net/tin-tuc/bong-da" class="toppic3">Bóng đá</a>
+                </div>
+
+            </section>
+            <article class="list_news3">
+                <h3 class="title_news"><a class="title_news a" href="https://vnexpress.net/tin-tuc/giai-ngoai-hang-anh/man-city-dai-chien-chelsea-atletico-de-doa-barca-3717758.html">Man City đại chiến Chelsea, Atletico đe doạ Barca </a></h3>
+                <div class=" mini_pic">
+                    <a href="https://vnexpress.net/tin-tuc/giai-ngoai-hang-anh/man-city-dai-chien-chelsea-atletico-de-doa-barca-3717758.html" class="pic_5x3">
+                        <img src="https://i-thethao.vnecdn.net/2018/03/03/Untitled-1520018559-8873-1520018569_140x84.jpg" />
+                    </a>
+                </div>
+                <h4 class="description">
+                    Cuối tuần này, Ngoại hạng Anh chứng kiến trận đấu của một cuộc chuyển giao trong tương lai, còn tại La Liga là cuộc chiến
+                </h4>
+            </article>
+            <ul class="list_title2">
+                <li class="bonus_descrip">
+                    <a href="https://thethao.vnexpress.net/tin-tuc/bong-da-trong-nuoc/thu-mon-quay-lung-cho-doi-thu-ghi-ban-duoc-vff-xoa-an-3717759.html" class="bonus_descrip4">
+                        Thủ môn quay lưng cho đối thủ ghi bàn được VFF xoá án
+                    </a>
+                </li>
+                <li class="bonus_descrip">
+                    <a href="https://thethao.vnexpress.net/tin-tuc/giai-ngoai-hang-anh/conte-clb-phai-the-hien-tham-vong-khong-phai-hlv-3717879.html" class="bonus_descrip4">
+                        Conte: 'CLB phải thể hiện tham vọng, không phải HLV'
+                    </a>
+                </li>
+            </ul>
+
+            <section class="menu_mini">
+                <div class="toppic1">
+                    <a href="https://thethao.vnexpress.net/" class="a toppic">Thể thao</a>
+                </div>
+                <div class="toppic1">
+                    <a href="https://thethao.vnexpress.net/tin-tuc/bong-da" class="toppic3">Bóng đá</a>
+                </div>
+
+            </section>
+            <article class="list_news3">
+                <h3 class="title_news"><a class="title_news a" href="https://vnexpress.net/tin-tuc/giai-ngoai-hang-anh/man-city-dai-chien-chelsea-atletico-de-doa-barca-3717758.html">Man City đại chiến Chelsea, Atletico đe doạ Barca </a></h3>
+                <div class=" mini_pic">
+                    <a href="https://vnexpress.net/tin-tuc/giai-ngoai-hang-anh/man-city-dai-chien-chelsea-atletico-de-doa-barca-3717758.html" class="pic_5x3">
+                        <img src="https://i-thethao.vnecdn.net/2018/03/03/Untitled-1520018559-8873-1520018569_140x84.jpg" />
+                    </a>
+                </div>
+                <h4 class="description">
+                    Cuối tuần này, Ngoại hạng Anh chứng kiến trận đấu của một cuộc chuyển giao trong tương lai, còn tại La Liga là cuộc chiến
+                </h4>
+            </article>
+            <ul class="list_title2">
+                <li class="bonus_descrip">
+                    <a href="https://thethao.vnexpress.net/tin-tuc/bong-da-trong-nuoc/thu-mon-quay-lung-cho-doi-thu-ghi-ban-duoc-vff-xoa-an-3717759.html" class="bonus_descrip4">
+                        Thủ môn quay lưng cho đối thủ ghi bàn được VFF xoá án
+                    </a>
+                </li>
+                <li class="bonus_descrip">
+                    <a href="https://thethao.vnexpress.net/tin-tuc/giai-ngoai-hang-anh/conte-clb-phai-the-hien-tham-vong-khong-phai-hlv-3717879.html" class="bonus_descrip4">
+                        Conte: 'CLB phải thể hiện tham vọng, không phải HLV'
+                    </a>
+                </li>
+            </ul>
+
+            <section class="menu_mini">
+                <div class="toppic1">
+                    <a href="https://thethao.vnexpress.net/" class="a toppic">Thể thao</a>
+                </div>
+                <div class="toppic1">
+                    <a href="https://thethao.vnexpress.net/tin-tuc/bong-da" class="toppic3">Bóng đá</a>
+                </div>
+            </section>
+            <article class="list_news3">
+                <h3 class="title_news"><a class="title_news a" href="https://vnexpress.net/tin-tuc/giai-ngoai-hang-anh/man-city-dai-chien-chelsea-atletico-de-doa-barca-3717758.html">Man City đại chiến Chelsea, Atletico đe doạ Barca </a></h3>
+                <div class=" mini_pic">
+                    <a href="https://vnexpress.net/tin-tuc/giai-ngoai-hang-anh/man-city-dai-chien-chelsea-atletico-de-doa-barca-3717758.html" class="pic_5x3">
+                        <img src="https://i-thethao.vnecdn.net/2018/03/03/Untitled-1520018559-8873-1520018569_140x84.jpg" />
+                    </a>
+                </div>
+                <h4 class="description">
+                    Cuối tuần này, Ngoại hạng Anh chứng kiến trận đấu của một cuộc chuyển giao trong tương lai, còn tại La Liga là cuộc chiến
+                </h4>
+            </article>
+            <ul class="list_title2">
+                <li class="bonus_descrip">
+                    <a href="https://thethao.vnexpress.net/tin-tuc/bong-da-trong-nuoc/thu-mon-quay-lung-cho-doi-thu-ghi-ban-duoc-vff-xoa-an-3717759.html" class="bonus_descrip4">
+                        Thủ môn quay lưng cho đối thủ ghi bàn được VFF xoá án
+                    </a>
+                </li>
+                <li class="bonus_descrip">
+                    <a href="https://thethao.vnexpress.net/tin-tuc/giai-ngoai-hang-anh/conte-clb-phai-the-hien-tham-vong-khong-phai-hlv-3717879.html" class="bonus_descrip4">
+                        Conte: 'CLB phải thể hiện tham vọng, không phải HLV'
+                    </a>
+                </li>
+            </ul>
+        </section>
+        
+        <section class="main3">
+            <section class="menu_mini">
+                <div class="toppic1">
+                    <a href="#" class="a toppic">Hồ Chí Minh</a>
+                </div> 
+                <div>
+                    <i class="icon icon_thoitiet"></i>
+                </div>      
+                <div>
+                    <h5><b>28<sup>o</sup>C</b></h5>
+                </div>
+            </section>
+            <section>
+                <img src="https://img.polyad.net/2018/03/02/160x600.gif" style="padding-top:15px";/>
+            </section>
+            <section>
+                <img src="https://img.polyad.net/2018/03/02/160x600.gif" style="padding-top:15px" ; />
+            </section>
+            <section>
+                <img src="https://img.polyad.net/2018/03/02/160x600.gif" style="padding-top:15px" ; />
+                <section>
+                    <img src="https://img.polyad.net/2018/03/02/160x600.gif" style="padding-top:15px" ; />
+                </section>
+                <section>
+                    <img src="https://img.polyad.net/2018/03/02/160x600.gif" style="padding-top:15px" ; />
+                </section>
+
+            </section>
+        </section>
+    </section>
+    <section class="thongtin">
+        <header>
+            <div class="newthongtin">
+                <a href="https://thethao.vnexpress.net/" class="a toppic">Thông tin doanh nghiệp</a>
+            </div>           
+        </header>
+        <div class="in_newthongtin">
+            <div class="img_newthongtin">
+                <a href="https://kinhdoanh.vnexpress.net/tin-tuc/doanh-nghiep/doanh-nghiep-viet/dia-chi-mua-sam-cho-tin-do-trang-suc-kim-cuong-3717374.html" class="a"><img src="https://i-kinhdoanh.vnecdn.net/2018/03/02/rong-nau-EUPI-JPG-6135-1519986561_140x84.jpg" />Các loại Fucoidan chiết xuất từ rong biển nâu  </a>           
+            </div>
+            <div class="img_newthongtin">
+                <a href="https://kinhdoanh.vnexpress.net/tin-tuc/doanh-nghiep/doanh-nghiep-viet/dia-chi-mua-sam-cho-tin-do-trang-suc-kim-cuong-3717374.html" class="a"><img src="https://i-kinhdoanh.vnecdn.net/2018/03/02/2-3-201827-235621303-1921-1519981719_140x84.jpeg" />Địa chỉ mua sắm cho tín đồ trang sức kim cương </a>
+            </div>
+            <div class="img_newthongtin">
+                <a href="https://kinhdoanh.vnexpress.net/tin-tuc/doanh-nghiep/doanh-nghiep-viet/dia-chi-mua-sam-cho-tin-do-trang-suc-kim-cuong-3717374.html" class="a"><img src="https://i-kinhdoanh.vnecdn.net/2018/03/02/Image-ExtractWord-2-Out-6022-1519961435_140x84.jpeg" />Phong Vũ mở rộng kinh doanh ra phía Bắc và miền Trung </a>
+            </div>
+            <div class="img_newthongtin">
+                <a href="https://kinhdoanh.vnexpress.net/tin-tuc/doanh-nghiep/doanh-nghiep-viet/dia-chi-mua-sam-cho-tin-do-trang-suc-kim-cuong-3717374.html" class="a"><img src="https://i-kinhdoanh.vnecdn.net/2018/03/02/Image-656181687-ExtractWord-0-3043-4711-1519949847_140x84.jpeg" />Ý nghĩa bộ tranh Tết của Trung tâm tiếng Anh Apax English </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="thongtin">     
+        <div class="in_newthongtin2">
+            <div class="img_newthongtin">
+                <a href="https://kinhdoanh.vnexpress.net/tin-tuc/doanh-nghiep/doanh-nghiep-viet/dia-chi-mua-sam-cho-tin-do-trang-suc-kim-cuong-3717374.html" class="a"><img src="https://s.vnecdn.net/shop/i/v8/graphics/logo-shop.png" /></a>
+            </div>
+            <div class="img_newthongtin">
+                <a href="https://kinhdoanh.vnexpress.net/tin-tuc/doanh-nghiep/doanh-nghiep-viet/dia-chi-mua-sam-cho-tin-do-trang-suc-kim-cuong-3717374.html" class="a"><img src="https://i-shop.vnecdn.net/images/2018/03/02/5a990b2b8168c-d-.png" />Deal túi xách cho ngày ph... </a>
+            </div>
+            <div class="img_newthongtin">
+                <a href="https://kinhdoanh.vnexpress.net/tin-tuc/doanh-nghiep/doanh-nghiep-viet/dia-chi-mua-sam-cho-tin-do-trang-suc-kim-cuong-3717374.html" class="a"><img src="https://i-shop.vnecdn.net/images/2018/02/27/5a951b8747117-aaad.png" />Thời trang sành điệu giá ...</a>
+            </div>
+            <div class="img_newthongtin">
+                <a href="https://kinhdoanh.vnexpress.net/tin-tuc/doanh-nghiep/doanh-nghiep-viet/dia-chi-mua-sam-cho-tin-do-trang-suc-kim-cuong-3717374.html" class="a"><img src="https://i-shop.vnecdn.net/images/2018/01/19/5a6157344d506-vmggt.png" />Bộ drap Kymdan Serenity...</a>
+            </div>
+        </div>
+    </section>
+    <section class="thongtin">
+        <footer style="margin-top:60px;">
+            <div class="newthongtin">
+                <a href="https://thethao.vnexpress.net/" class="a toppic" style="color:#666" ;>Trang chủ</a>
+            </div>
+        </footer>
+        <div class="in_newthongtin2">
+            <ul class="danhsach">
+                <li>
+                    <a href="https://thethao.vnexpress.net/" class="a toppic" style="color:#666" ;>Video</a>
+                    <a href="https://thethao.vnexpress.net/" class="a toppic" style="color:#666" ;>Thời sự</a>
+                    <a href="https://thethao.vnexpress.net/" class="a toppic" style="color:#666" ;>Góc nhìn </a>
+                    <a href="https://thethao.vnexpress.net/" class="a toppic" style="color:#666" ;>Thế giới</a>
+
+                </li>
+            </ul>
+
+            <ul class="danhsach">
+                <li>
+                    <a href="https://thethao.vnexpress.net/" class="a toppic" style="color:#666" ;>Video</a>
+                    <a href="https://thethao.vnexpress.net/" class="a toppic" style="color:#666" ;>Thời sự</a>
+                    <a href="https://thethao.vnexpress.net/" class="a toppic" style="color:#666" ;>Góc nhìn </a>
+                    <a href="https://thethao.vnexpress.net/" class="a toppic" style="color:#666" ;>Thế giới</a>
+
+                </li>
+            </ul>
+            <ul class="danhsach">
+                <li>
+                    <a href="https://thethao.vnexpress.net/" class="a toppic" style="color:#666" ;>Video</a>
+                    <a href="https://thethao.vnexpress.net/" class="a toppic" style="color:#666" ;>Thời sự</a>
+                    <a href="https://thethao.vnexpress.net/" class="a toppic" style="color:#666" ;>Góc nhìn </a>
+                    <a href="https://thethao.vnexpress.net/" class="a toppic" style="color:#666" ;>Thế giới</a>
+
+                </li>
+            </ul>
+            <ul class="danhsach">
+                <li>
+                    <a href="https://thethao.vnexpress.net/" class="a toppic" style="color:#666" ;>Video</a>
+                    <a href="https://thethao.vnexpress.net/" class="a toppic" style="color:#666" ;>Thời sự</a>
+                    <a href="https://thethao.vnexpress.net/" class="a toppic" style="color:#666" ;>Góc nhìn </a>
+                    <a href="https://thethao.vnexpress.net/" class="a toppic" style="color:#666" ;>Thế giới</a>
+
+                </li>
+            </ul>
+            <ul class="danhsach">
+                <li>
+                    <a href="https://thethao.vnexpress.net/" class="a toppic" style="color:#666" ;>Video</a>
+                    <a href="https://thethao.vnexpress.net/" class="a toppic" style="color:#666" ;>Thời sự</a>
+                    <a href="https://thethao.vnexpress.net/" class="a toppic" style="color:#666" ;>Góc nhìn </a>
+                    <a href="https://thethao.vnexpress.net/" class="a toppic" style="color:#666" ;>Thế giới</a>
+
+                </li>
+            </ul>
+            <ul class="danhsach">
+                <li>
+                    <a href="https://thethao.vnexpress.net/" class="a toppic" style="color:#666" ;>Video</a>
+                    <a href="https://thethao.vnexpress.net/" class="a toppic" style="color:#666" ;>Thời sự</a>
+                    <a href="https://thethao.vnexpress.net/" class="a toppic" style="color:#666" ;>Góc nhìn </a>
+                    <a href="https://thethao.vnexpress.net/" class="a toppic" style="color:#666" ;>Thế giới</a>
+
+                </li>
+            </ul>
+            <ul class="danhsach" style="width:18%">
+                <li>
+                    <img src="https://s.vnecdn.net/vnexpress/restruct/i/v54/graphics/logo_vne_f.jpg" />Tải VnExpress App
+                </li>
+                <li style="float:left">
+                    <div style="width:60%;margin:0;float:left">
+                        <img src="https://s.vnecdn.net/vnexpress/restruct/i/v54/graphics/apple_app.png" />
+                        <img src="https://s.vnecdn.net/vnexpress/restruct/i/v54/graphics/android_app.png" />
+                        
+                    </div>
+                    <div style="float:right" ;>
+                        <img src="https://s.vnecdn.net/vnexpress/restruct/i/v54/graphics/qr_app.jpg" />
+                    </div>
+                </li>
+        </ul>
+        </div>
+        <div >
+            <img src="https://s.vnecdn.net/vnexpress/restruct/i/v54/graphics/img_logo_vne.jpg" style="float:left"/>
+            <div style="width: 45%;float: left;">
+                <p>Thuộc Bộ Khoa học Công nghệ. © Copyright 1997 VnExpress, All rights reserved.</p>
+                <p>® VnExpress giữ bản quyền nội dung trên website này.</p>               
+            </div>
+            <div style="float:right;text-align:right ">
+                <p>VnExpress tuyển dụng  Liên hệ: Quảng cáo / Tòa soạn</p>
+                <ul class="tableft">
+                    <li class="litab1">
+                        <i class="icon phone"></i>
+                        <strong class="sdt">0123.888.0123 </strong> (HN)
+                        <strong class="sdt">0129.233.3555 </strong> (TP HCM)
+                    </li>
+                    <li class="litab">
+                        <a href="https://vnexpress.net/lien-he-quang-cao" class="lhqc">Liên hệ quảng cáo</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
